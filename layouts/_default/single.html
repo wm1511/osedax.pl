@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="container mt-5">
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p>{{ i18n "published" }}</p>
+  </header>
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}
