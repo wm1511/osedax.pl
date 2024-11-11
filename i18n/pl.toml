@@ -1,2 +1,11 @@
-[published]
-other = "Opublikowany"
+[offer]
+other = "Oferta"
+
+[certificates]
+other = "Certyfikaty"
+
+[projects]
+other = "Realizacje"
+
+[contact]
+other = "Kontakt"

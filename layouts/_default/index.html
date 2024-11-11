@@ -1,11 +1,12 @@
 {{ define "main" }}
 <div class="container">
     <header class="py-5">
-        <h1>{{ .Title }}</h1>
-        <p class="lead">All items in this section.</p>
+        <h1>Welcome to My Website</h1>
+        <p class="lead">This is a brief description of the site or a welcome message.</p>
     </header>
 
     <section>
+        <h2>Recent Posts</h2>
         <div class="row">
             {{ range .Pages }}
             <div class="col-md-4">

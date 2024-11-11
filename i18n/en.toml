@@ -1,2 +1,11 @@
-[published]
-other = "Published"
+[offer]
+other = "Offer"
+
+[certificates]
+other = "Certificates"
+
+[projects]
+other = "Projects"
+
+[contact]
+other = "Contact"

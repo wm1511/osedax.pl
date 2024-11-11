@@ -1,12 +1,14 @@
 {{ define "main" }}
-<article class="container mt-5">
-  <header>
-    <h1>{{ .Title }}</h1>
-    <p>{{ i18n "published" }}</p>
-  </header>
+<div class="container">
+    <article class="py-5">
+        <header>
+            <h1>{{ .Title }}</h1>
+            <p class="text-muted">Published on {{ .Date.Format "January 2, 2006" }}</p>
+        </header>
 
-  <div class="content">
-    {{ .Content }}
-  </div>
-</article>
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </article>
+</div>
 {{ end }}
