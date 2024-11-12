@@ -6,8 +6,29 @@
     <description>Recent content on Osedax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 08 Nov 2024 18:40:07 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2024 21:29:12 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/en/contact/</link>
+      <pubDate>Tue, 12 Nov 2024 21:29:12 +0100</pubDate>
+      <guid>http://localhost:1313/en/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/en/projects/</link>
+      <pubDate>Tue, 12 Nov 2024 21:29:03 +0100</pubDate>
+      <guid>http://localhost:1313/en/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Certificates</title>
+      <link>http://localhost:1313/en/certificates/</link>
+      <pubDate>Tue, 12 Nov 2024 21:28:54 +0100</pubDate>
+      <guid>http://localhost:1313/en/certificates/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Offer</title>
       <link>http://localhost:1313/en/offer/</link>

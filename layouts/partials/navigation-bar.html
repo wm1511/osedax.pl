@@ -1,23 +1,20 @@
 <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="{{ relLangURL " /" }}"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <a href="{{ relLangURL "/" }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <span class="fs-4">Osedax</span>
         </a>
 
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="{{ relLangURL " offer" }}" class="nav-link">{{ i18n "offer" }}</a></li>
-            <li class="nav-item"><a href="{{ relLangURL " certificates" }}" class="nav-link">{{ i18n "certificates"
-                    }}</a></li>
-            <li class="nav-item"><a href="{{ relLangURL " projects" }}" class="nav-link">{{ i18n "projects" }}</a></li>
-            <li class="nav-item"><a href="{{ relLangURL " contact" }}" class="nav-link">{{ i18n "contact" }}</a></li>
+            <li class="nav-item"><a href="{{ relLangURL "offer" }}" class="nav-link">{{ i18n "offer" }}</a></li>
+            <li class="nav-item"><a href="{{ relLangURL "certificates" }}" class="nav-link">{{ i18n "certificates" }}</a></li>
+            <li class="nav-item"><a href="{{ relLangURL "projects" }}" class="nav-link">{{ i18n "projects" }}</a></li>
+            <li class="nav-item"><a href="{{ relLangURL "contact" }}" class="nav-link">{{ i18n "contact" }}</a></li>
             <li class="nav-item">
-                {{ if eq . $.Site.Language }}
-                    <a href="#" class="nav-link">{{ .LanguageName }}</a>
-                {{ else }}
-                    {{ range $.Translations }}
-                        <a href="{{ .Permalink }}" class="nav-link">{{ .Language.LanguageName }}</a>
-                    {{ end }}
+                {{ range $.Translations }}
+                    <a class="btn btn-primary d-flex align-items-center" href="{{ .Permalink }}" role="button">
+                        <img class="me-2 align-middle" style="height: 1.5em;" src="{{ i18n "flag-link" }}"></img>
+                            {{ .Language.LanguageName }}
+                    </a>
                 {{ end }}
             </li>
         </ul>
