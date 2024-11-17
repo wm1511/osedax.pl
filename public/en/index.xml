@@ -6,34 +6,33 @@
     <description>Recent content on Osedax</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Nov 2024 21:29:12 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:1313/en/contact/</link>
-      <pubDate>Tue, 12 Nov 2024 21:29:12 +0100</pubDate>
-      <guid>http://localhost:1313/en/contact/</guid>
-      <description>&lt;link href=&#34;https://unpkg.com/leaflet@1.9.4/dist/leaflet.css&#34; rel=&#34;stylesheet&#34; integrity=&#34;sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=&#34; crossorigin=&#34;&#34;/&gt;&#xD;&#xA;&#xD;&#xA;&lt;div id=&#34;map&#34; style=&#34;height: 300px;&#34;&gt;&lt;/div&gt;&#xD;&#xA;&lt;script src=&#34;https://unpkg.com/leaflet@1.9.4/dist/leaflet.js&#34; integrity=&#34;sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=&#34; crossorigin=&#34;&#34;&gt;&lt;/script&gt;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;    const map = L.map(&#39;map&#39;).setView([49.9329121, 19.3855164], 16);&#xD;&#xA;&#xD;&#xA;    L.tileLayer(&#39;https://tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, &#xD;&#xA;    {&#xD;&#xA;        maxZoom: 19,&#xD;&#xA;        attribution: &#39;&amp;copy; &lt;a href=&#34;http://www.openstreetmap.org/copyright&#34;&gt;OpenStreetMap&lt;/a&gt;&#39;&#xD;&#xA;    }).addTo(map);&#xD;&#xA;&#xD;&#xA;    var marker = L.marker([49.9329121, 19.3855164]).addTo(map);&#xD;&#xA;&lt;/script&gt;</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/en/projects/</link>
-      <pubDate>Tue, 12 Nov 2024 21:29:03 +0100</pubDate>
-      <guid>http://localhost:1313/en/projects/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Certificates</title>
       <link>http://localhost:1313/en/certificates/</link>
-      <pubDate>Tue, 12 Nov 2024 21:28:54 +0100</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/certificates/</guid>
       <description></description>
     </item>
     <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/en/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/contact/</guid>
+      <description>&lt;link href=&#34;https://unpkg.com/leaflet@1.9.4/dist/leaflet.css&#34; rel=&#34;stylesheet&#34; integrity=&#34;sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=&#34; crossorigin=&#34;&#34;/&gt;&#xD;&#xA;&#xD;&#xA;&lt;div id=&#34;map&#34; style=&#34;height: 300px;&#34;&gt;&lt;/div&gt;&#xD;&#xA;&lt;script src=&#34;https://unpkg.com/leaflet@1.9.4/dist/leaflet.js&#34; integrity=&#34;sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=&#34; crossorigin=&#34;&#34;&gt;&lt;/script&gt;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;    const map = L.map(&#39;map&#39;).setView([49.9329121, 19.3855164], 16);&#xD;&#xA;&#xD;&#xA;    L.tileLayer(&#39;https://tile.openstreetmap.org/{z}/{x}/{y}.png&#39;, &#xD;&#xA;    {&#xD;&#xA;        maxZoom: 19,&#xD;&#xA;        attribution: &#39;&amp;copy; &lt;a href=&#34;http://www.openstreetmap.org/copyright&#34;&gt;OpenStreetMap&lt;/a&gt;&#39;&#xD;&#xA;    }).addTo(map);&#xD;&#xA;&#xD;&#xA;    var marker = L.marker([49.9329121, 19.3855164]).addTo(map);&#xD;&#xA;&lt;/script&gt;</description>
+    </item>
+    <item>
       <title>Offer</title>
       <link>http://localhost:1313/en/offer/</link>
-      <pubDate>Fri, 08 Nov 2024 18:40:07 +0100</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/offer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/en/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/projects/</guid>
       <description></description>
     </item>
   </channel>
