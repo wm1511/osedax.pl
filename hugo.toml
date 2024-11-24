@@ -1,8 +1,16 @@
 baseURL = 'https://osedax.pl/'
 title = 'Osedax'
-contentDir = 'content'
-
 defaultContentLanguage = "pl"
+
+[params]
+company = "Osedax sp. z o.o."
+address1 = "ul. Zatorska 23"
+address2 = "34-122, Gierałtowice"
+mail1 = "osedax@vp.pl"
+mail2 = "biuro.osedax@vp.pl"
+phone1 = 607227073
+phone2 = 507429459
+
 [languages]
 [languages.pl]
   languageName = "Polski"
