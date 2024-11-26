@@ -15,7 +15,7 @@
                     <li class="d-flex mb-30">
                         <div class="align-self-center font-primary">
                             <p>
-                                <img class="me-2 align-middle" style="height: 1em;" src="../clock.svg"></img>
+                                <img class="me-2 align-middle" style="height: 1em;" src="{{ .Site.BaseURL }}/clock.svg"></img>
                                 {{ .Site.Data.contact.hours.open }} - {{ .Site.Data.contact.hours.close }}
                             </p>
                         </div>
@@ -25,11 +25,11 @@
                     <li class="d-flex mb-30">
                         <div class="align-self-center font-primary">
                             <a href="mailto:{{ .i1 }}">
-                                <img class="me-2 align-middle" style="height: 1em;" src="../mail.svg"></img>
+                                <img class="me-2 align-middle" style="height: 1em;" src="{{ .Site.BaseURL }}/mail.svg"></img>
                                 {{ .i1 }}
                             </a>
                             <a href="callto:{{ .i2 }}">
-                                <img class="me-2 align-middle" style="height: 1em;" src="../phone.svg"></img>
+                                <img class="me-2 align-middle" style="height: 1em;" src="{{ .Site.BaseURL }}/phone.svg"></img>
                                 {{ .i2 }}
                             </a>
                         </div>
