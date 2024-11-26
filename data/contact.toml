@@ -1,0 +1,17 @@
+[address]
+name = "Osedax sp. z o.o."
+a1 = "ul. Zatorska 23"
+a2 = "34-122, Gierałtowice"
+
+[hours]
+open = "7:00"
+close = "16:00"
+
+[[list]]
+i1 = "biuro.osedax@vp.pl"
+i2 = 507429459
+
+[[list]]
+i1 = "osedax@vp.pl"
+i2 = 607227073
+

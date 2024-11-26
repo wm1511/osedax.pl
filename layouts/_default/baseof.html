@@ -1,6 +1,7 @@
 <html>
     {{ partial "head.html" . }}
     <body>
+        {{ partial "preloader.html" . }}
         {{ partial "header.html" . }}
         <div id="content">
             {{ block "main" . }}{{ end }}

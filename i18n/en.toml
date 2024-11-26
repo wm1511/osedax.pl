@@ -14,4 +14,7 @@ other = "Contact"
 other = "All rights reserved"
 
 [flag-link]
-other = "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg"
+other = "../../pl.svg"
+
+[contact-us]
+other = "Contact us"

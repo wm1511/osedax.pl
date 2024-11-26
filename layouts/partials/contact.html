@@ -1,0 +1,42 @@
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-1 col-md-5">
+                <h2 class="section-title">{{ i18n "contact-us" }}</h2>
+                <ul class="pl-0">
+                    <li class="d-flex mb-30">
+                        <div class="align-self-center font-primary">
+                            <p>{{ .Site.Data.contact.address.name }}</p>
+                            <p>{{ .Site.Data.contact.address.a1 }}</p>
+                            <p>{{ .Site.Data.contact.address.a2 }}</p>
+                        </div>
+                    </li>
+
+                    <li class="d-flex mb-30">
+                        <div class="align-self-center font-primary">
+                            <p>
+                                <img class="me-2 align-middle" style="height: 1em;" src="../clock.svg"></img>
+                                {{ .Site.Data.contact.hours.open }} - {{ .Site.Data.contact.hours.close }}
+                            </p>
+                        </div>
+                    </li>
+
+                    {{ range .Site.Data.contact.list }}
+                    <li class="d-flex mb-30">
+                        <div class="align-self-center font-primary">
+                            <a href="mailto:{{ .i1 }}">
+                                <img class="me-2 align-middle" style="height: 1em;" src="../mail.svg"></img>
+                                {{ .i1 }}
+                            </a>
+                            <a href="callto:{{ .i2 }}">
+                                <img class="me-2 align-middle" style="height: 1em;" src="../phone.svg"></img>
+                                {{ .i2 }}
+                            </a>
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
