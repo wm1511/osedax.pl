@@ -1,8 +1,7 @@
 <section class="section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 offset-lg-1 col-md-5">
-                <h2 class="section-title">{{ i18n "contact-us" }}</h2>
+            <div class="col-md-6">
                 <ul class="pl-0">
                     <li class="d-flex mb-30">
                         <div class="align-self-center font-primary">
@@ -36,6 +35,9 @@
                     </li>
                     {{ end }}
                 </ul>
+            </div>
+            <div class="col-md-6">
+                {{ partial "map.html" . }}
             </div>
         </div>
     </div>
