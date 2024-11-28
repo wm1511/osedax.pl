@@ -16,5 +16,17 @@ other = "Wszelkie prawa zastrzeżone"
 [flag-link]
 other = "../en.svg"
 
-[contact-us]
-other = "Skontaktuj się z nami"
+[address]
+other = "Siedziba firmy"
+
+[production-site]
+other = "Zakład produkcyjny"
+
+[company-misc]
+other = "Dane firmy"
+
+[working-hours]
+other = "Godziny otwarcia"
+
+[mail-phone]
+other = "Kontakt mailowy i telefoniczny"

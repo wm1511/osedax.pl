@@ -1,5 +1,8 @@
-<div class="container">
-    <div class="row">
+{{ $jpg := resources.Get "jpg/page-title.jpg" }}
+{{ $filter := images.Brightness -20 }}
+{{ $webp := $jpg.Process "webp" | images.Filter images.Grayscale | images.Filter $filter }}
+
+<div class="container page-title" style="background-image: url('{{ $webp.RelPermalink }}')">
         <div class="col-lg-12 text-center">
             <h2 class="font-weight-bold">{{ .Title }}</h2>
         </div>

@@ -16,5 +16,17 @@ other = "All rights reserved"
 [flag-link]
 other = "../../pl.svg"
 
-[contact-us]
-other = "Contact us"
+[address]
+other = "Company registration place"
+
+[production-site]
+other = "Production site"
+
+[company-misc]
+other = "Company details"
+
+[working-hours]
+other = "Working hours"
+
+[mail-phone]
+other = "Email and phone contact"

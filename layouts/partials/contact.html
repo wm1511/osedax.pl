@@ -1,44 +1,59 @@
-<section class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <ul class="pl-0">
-                    <li class="d-flex mb-30">
-                        <div class="align-self-center font-primary">
-                            <p>{{ .Site.Data.contact.address.name }}</p>
-                            <p>{{ .Site.Data.contact.address.a1 }}</p>
-                            <p>{{ .Site.Data.contact.address.a2 }}</p>
-                        </div>
-                    </li>
+<div class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <ul class="align-center">
 
-                    <li class="d-flex mb-30">
-                        <div class="align-self-center font-primary">
-                            <p>
-                                <img class="me-2 align-middle" style="height: 1em;" src="{{ .Site.BaseURL }}/clock.svg"></img>
-                                {{ .Site.Data.contact.hours.open }} - {{ .Site.Data.contact.hours.close }}
-                            </p>
-                        </div>
-                    </li>
+                <h4>{{ i18n "address" }}</h4>
+                <li class="mb-30">
+                    <div class="align-self-center">
+                        <p>{{ .Site.Data.contact.address.name }}</p>
+                        <p>{{ .Site.Data.contact.address.a1 }}</p>
+                        <p>{{ .Site.Data.contact.address.a2 }}</p>
+                    </div>
+                </li>
 
-                    {{ range .Site.Data.contact.list }}
-                    <li class="d-flex mb-30">
-                        <div class="align-self-center font-primary">
-                            <a href="mailto:{{ .i1 }}">
-                                <img class="me-2 align-middle" style="height: 1em;" src="{{ .Site.BaseURL }}/mail.svg"></img>
-                                {{ .i1 }}
-                            </a>
-                            <a href="callto:{{ .i2 }}">
-                                <img class="me-2 align-middle" style="height: 1em;" src="{{ .Site.BaseURL }}/phone.svg"></img>
-                                {{ .i2 }}
-                            </a>
-                        </div>
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="col-md-6">
-                {{ partial "map.html" . }}
-            </div>
+                <h4>{{ i18n "production-site" }}</h4>
+                <li class="mb-30">
+                    <div class="align-self-center">
+                        <p>{{ .Site.Data.contact.production.a3 }}</p>
+                        <p>{{ .Site.Data.contact.production.a4 }}</p>
+                    </div>
+                </li>
+
+                <h4>{{ i18n "company-misc" }}</h4>
+                <li class="mb-30">
+                    <div class="align-self-center">
+                        <p>NIP: {{ .Site.Data.contact.misc.m1 }}</p>
+                        <p>REGON: {{ .Site.Data.contact.misc.m2 }}</p>
+                    </div>
+                </li>
+
+                <h4>{{ i18n "working-hours" }}</h4>
+                <li class="mb-30">
+                    <div class="align-self-center">
+                        <p>{{ .Site.Data.contact.hours.open }} - {{ .Site.Data.contact.hours.close }}</p>
+                    </div>
+                </li>
+
+                <h4>{{ i18n "mail-phone" }}</h4>
+                {{ range .Site.Data.contact.list }}
+                <li class="mb-20">
+                    <div class="align-self-center">
+                        <a href="mailto:{{ .i1 }}">
+                            <img class="me-2 align-middle" style="height: 1em;" src="{{ .Site.BaseURL }}/mail.svg"></img>
+                            {{ .i1 }}
+                        </a>
+                        <a href="callto:{{ .i2 }}">
+                            <img class="ms-4 me-2 align-middle" style="height: 1em;" src="{{ .Site.BaseURL }}/phone.svg"></img>
+                            {{ .i2 }}
+                        </a>
+                    </div>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        <div class="col-md-6">
+            {{ partial "map.html" . }}
         </div>
     </div>
-</section>
+</div>

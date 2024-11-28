@@ -1,16 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:wght@100..900|Montserrat:wght@100..900");
+
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
 $black: #000000;
 $white: #ffffff;
 
 $primary: #eef5ff;
-$secondary: #b4d4ff;
-$info: #6666f6;
-$hover: #000080;
+$secondary: #80c4e4;
+$info: #000080;
+$hover: #ff7f3f;
 
-$debug: #ff0000;
+$debug: #00ff00;
 
 $contrast-text: #dddddd;
 $primary-text: #222222;
 $secondary-text: #666666;
+
+body {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    background-color: $primary;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: $hover;
+    color: $contrast-text;
+}
+
+ol, ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+a {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .2s ease;
+
+    :hover {
+        color: $hover;
+    }
+}
+
+p, .paragraph {
+    color: $secondary-text;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-text;
+    color: $primary-text;
+    font-weight: 700;
+}
+
+h1, .h1 {
+    font-size: 60px;
+}
+
+h2, .h2 {
+    font-size: 36px;
+}
+
+h3, .h3 {
+    font-size: 30px;
+}
+
+h4, .h4 {
+    font-size: 20px;
+}
+
+h5, .h5 {
+    font-size: 18px;
+}
+
+h6, .h6 {
+    font-size: 14px;
+}
+
+footer {
+    p {
+        color: $primary-text;
+    }
+    background-color: $secondary;
+}
+
+.btn {
+    font-size: 14px;
+    padding: auto;
+    border-radius: 25%;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: .2s ease;
+
+    :focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    :active {
+        box-shadow: none;
+    }
+}
+
+.btn-primary {
+    background: $info;
+
+    :active {
+        background: $info;
+    }
+
+    :hover {
+        background: $hover;
+        color: $contrast-text;
+    }
+}
+
+.outline-0 {
+    outline: 0;
+}
+
+.d-unset {
+    display: unset;
+}
 
 .preloader {
     position: fixed;
@@ -55,135 +181,10 @@ $secondary-text: #666666;
 
 .map
 {
-    height: 100%; 
+    width: auto;
+    height: 600px; 
     position: relative; 
     z-index: 10;
-}
-
-body {
-    font-size: 15px;
-    background-color: $primary;
-    overflow-x: hidden;
-}
-
-::selection {
-    background: $hover;
-    color: $contrast-text;
-}
-
-ol, ul {
-    list-style-type: none;
-    margin: 0;
-}
-
-img {
-    vertical-align: middle;
-    border: 0;
-}
-
-a {
-    text-decoration: none;
-    transition: .2s ease;
-
-    :hover {
-        color: $hover;
-    }
-}
-
-p, .paragraph {
-    color: $secondary-text;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 25px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: $primary-text;
-    font-weight: 500;
-}
-
-h1, .h1 {
-    font-size: 60px;
-}
-
-h2, .h2 {
-    font-size: 36px;
-}
-
-h3, .h3 {
-    font-size: 30px;
-}
-
-h4, .h4 {
-    font-size: 20px;
-}
-
-h5, .h5 {
-    font-size: 18px;
-}
-
-h6, .h6 {
-    font-size: 14px;
-}
-
-.btn {
-    font-size: 14px;
-    padding: auto;
-    border-radius: 25%;
-    font-weight: 600;
-    position: relative;
-    z-index: 1;
-    transition: .2s ease;
-
-    :focus {
-        outline: 0;
-        box-shadow: none;
-    }
-
-    :active {
-        box-shadow: none;
-    }
-}
-
-.btn-primary {
-    background: $info;
-
-    :active {
-        background: $info;
-    }
-
-    :hover {
-        background: $hover;
-        color: $contrast-text;
-    }
-}
-
-.outline-0 {
-    outline: 0;
-}
-
-.d-unset {
-    display: unset;
-}
-
-.slick-slide {
-    outline: 0;
-}
-
-.centralized {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-section {
-    padding: 6rem 0;
-}
-
-.section-title {
-    margin-bottom: 4rem;
 }
 
 @mixin overlay($background)
@@ -198,7 +199,7 @@ section {
         top: 0;
         left: 0;
         background: $background;
-        opacity: 0.6;
+        opacity: 0.2;
     }
 }
 
@@ -238,28 +239,6 @@ section {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-    }
-}
-
-.page-title {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10rem, 6rem;
-}
-
-.breadcrumb a, .breadcrumb li {
-    position: relative;
-    color: $white;
-    font-size: 12px;
-    margin: 0 0.6rem;
-
-    ::before {
-        position: absolute;
-        content: '/';
-        right: -1rem;
-        top: 2px;
-        height: 1rem;
     }
 }
 
@@ -315,55 +294,36 @@ section {
     margin-bottom: 100px;
 }
 
-.py-10 {
-    padding: 10px 0;
-}
-
-.py-50 {
-    padding: 50px 0;
-}
-
-.py-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
 .navigation {
 
     .navbar {
         padding: 0;
         background: $secondary;
         position: relative;
+    }
+
+    .navbar-collapse {
+        position: relative;
 
         .nav-item {
+            align-self: center;
             padding: 1rem;
 
             .nav-link {
                 padding: 1rem 1rem;
+                font-family: $secondary-font;
                 font-weight: 600;
+                font-size: 16;
                 color: $primary-text;
                 transition: .2s ease;
             }
 
             :hover {
-                color: $contrast-text;
+                color: $hover;
             }
-
+            
             a img {
                 height: 1.5em;
-            }
-        }
-    }
-
-    @media (max-width: 1000px) {
-        .navbar-brand {
-            height: unset;
-            width: unset;
-            background: $primary;
-
-            img {
-                height: 3rem;
-                width: auto;
             }
         }
     }
@@ -377,3 +337,15 @@ section {
         }
     }
 }
+
+.page-title {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0 5rem 0;
+
+    h2 {
+        color: $contrast-text;
+    }
+  }
+  

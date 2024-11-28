@@ -1,7 +1,15 @@
 [address]
-name = "Osedax sp. z o.o."
-a1 = "ul. Zatorska 23"
-a2 = "34-122, Gierałtowice"
+name = "OSEDAX Dariusz Merta"
+a1 = "ul. Krótka 8"
+a2 = "43-332, Pisarzowice"
+
+[production]
+a3 = "ul. Zatorska 23"
+a4 = "34-122, Gierałtowice"
+
+[misc]
+m1 = "9371038131"
+m2 = "072325660"
 
 [hours]
 open = "7:00"
