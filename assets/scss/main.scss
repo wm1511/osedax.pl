@@ -47,10 +47,10 @@ a {
     font-size: 16px;
     text-decoration: none;
     transition: .2s ease;
+}
 
-    :hover {
-        color: $hover;
-    }
+a:hover {
+    color: $hover;
 }
 
 p, .paragraph {
@@ -92,10 +92,11 @@ h6, .h6 {
 }
 
 footer {
+    background-color: $secondary;
+    
     p {
         color: $primary-text;
     }
-    background-color: $secondary;
 }
 
 .btn {
@@ -128,14 +129,6 @@ footer {
         background: $hover;
         color: $contrast-text;
     }
-}
-
-.outline-0 {
-    outline: 0;
-}
-
-.d-unset {
-    display: unset;
 }
 
 .preloader {
@@ -323,7 +316,7 @@ footer {
             }
             
             a img {
-                height: 1.5em;
+                height: 2em;
             }
         }
     }

@@ -1,3 +1,4 @@
 +++
-title = 'European Union'
+title = 'Support'
+layout = 'eu'
 +++

@@ -30,3 +30,6 @@ other = "Godziny otwarcia"
 
 [mail-phone]
 other = "Kontakt mailowy i telefoniczny"
+
+[eu]
+other = "Wsparcie"

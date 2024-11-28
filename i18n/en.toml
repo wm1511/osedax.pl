@@ -30,3 +30,6 @@ other = "Working hours"
 
 [mail-phone]
 other = "Email and phone contact"
+
+[eu]
+other = "Support"
