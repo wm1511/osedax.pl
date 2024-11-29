@@ -33,3 +33,9 @@ other = "Kontakt mailowy i telefoniczny"
 
 [eu]
 other = "Wsparcie"
+
+[not-found]
+other = "Strona nie istnieje!"
+
+[back-home]
+other = "Wróć do strony głównej"

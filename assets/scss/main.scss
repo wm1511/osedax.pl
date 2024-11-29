@@ -100,35 +100,24 @@ footer {
 }
 
 .btn {
-    font-size: 14px;
-    padding: auto;
-    border-radius: 25%;
+    font-family: $primary-font;
+
     font-weight: 600;
+    padding: auto;
+    border-radius: 1rem;
+    border-width: 0;
     position: relative;
     z-index: 1;
     transition: .2s ease;
-
-    :focus {
-        outline: 0;
-        box-shadow: none;
-    }
-
-    :active {
-        box-shadow: none;
-    }
 }
 
 .btn-primary {
     background: $info;
+}
 
-    :active {
-        background: $info;
-    }
-
-    :hover {
-        background: $hover;
-        color: $contrast-text;
-    }
+.btn-primary:hover {
+    background: $hover;
+    color: $contrast-text;
 }
 
 .preloader {
@@ -180,61 +169,6 @@ footer {
     z-index: 10;
 }
 
-@mixin overlay($background)
-{
-    position: relative;
-
-    ::before {
-        position: absolute;
-        content: '';
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: $background;
-        opacity: 0.2;
-    }
-}
-
-.overlay {
-    @include overlay($black)
-}
-
-.overlay-primary {
-    @include overlay($info)
-}
-
-.section-title-border {
-    position: relative;
-
-    ::before {
-        position: absolute;
-        content: '';
-        height: 2px;
-        width: 6rem;
-        bottom: -0.6rem;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        background: $info;
-    }
-
-    ::after {
-        position: absolute;
-        content: '';
-        height: 1rem;
-        width: 1rem;
-        border-radius: 50%;
-        background: $primary;
-        border: 2px solid $info;
-        box-shadow: 0 0 0 5px $primary;
-        bottom: -1rem;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-}
-
 .box-shadow {
     box-shadow: 0, 0.6rem, 2rem, 0, rgba(0, 0, 0, 0.1);
 }
@@ -245,46 +179,6 @@ footer {
 
 .bg-secondary {
     background-color: $secondary;
-}
-
-.mb-10 {
-    margin-bottom: 10px;
-}
-
-.mb-20 {
-    margin-bottom: 20px;
-}
-
-.mb-30 {
-    margin-bottom: 30px;
-}
-
-.mb-40 {
-    margin-bottom: 40px;
-}
-
-.mb-50 {
-    margin-bottom: 50px;
-}
-
-.mb-60 {
-    margin-bottom: 60px;
-}
-
-.mb-70 {
-    margin-bottom: 70px;
-}
-
-.mb-80 {
-    margin-bottom: 80px;
-}
-
-.mb-90 {
-    margin-bottom: 90px;
-}
-
-.mb-100 {
-    margin-bottom: 100px;
 }
 
 .navigation {
@@ -340,5 +234,20 @@ footer {
     h2 {
         color: $contrast-text;
     }
-  }
-  
+}
+
+.page-404 {
+    margin-top: 14rem;
+    margin-bottom: 14rem;
+
+    h1 {
+        font-size: 10rem;
+        color: $info;
+    }
+}
+
+.content {
+    p {
+        align-content: center;
+    }
+} 

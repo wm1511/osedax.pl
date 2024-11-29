@@ -3,7 +3,7 @@
     <body>
         {{ partial "preloader.html" . }}
         {{ partial "header.html" . }}
-        <div id="content">
+        <div id="content" class="content">
             {{ block "main" . }}{{ end }}
         </div>
         {{ partial "footer.html" . }}

@@ -33,3 +33,9 @@ other = "Email and phone contact"
 
 [eu]
 other = "Support"
+
+[not-found]
+other = "Page does not exist!"
+
+[back-home]
+other = "Back to home page"
