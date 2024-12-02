@@ -3,19 +3,13 @@
 $primary-font: 'Open Sans', sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
 
-$black: #000000;
-$white: #ffffff;
-
-$primary: #eef5ff;
-$secondary: #80c4e4;
-$info: #000080;
-$hover: #ff7f3f;
+$primary: #d3d3d3;
+$secondary: #708090;
+$brand: #000080;
+$highlight: #ffd700;
+$text: #222222;
 
 $debug: #00ff00;
-
-$contrast-text: #dddddd;
-$primary-text: #222222;
-$secondary-text: #666666;
 
 body {
     font-family: $primary-font;
@@ -27,8 +21,8 @@ body {
 }
 
 ::selection {
-    background: $hover;
-    color: $contrast-text;
+    background: $highlight;
+    color: $text;
 }
 
 ol, ul {
@@ -42,28 +36,29 @@ img {
 }
 
 a {
+    color: $brand;
     font-family: $secondary-font;
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
     transition: .2s ease;
-}
 
-a:hover {
-    color: $hover;
+    &:hover {
+        color: $highlight;
+    }
 }
 
 p, .paragraph {
-    color: $secondary-text;
+    color: $text;
     font-family: $secondary-font;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $primary-text;
-    color: $primary-text;
+    color: $text;
+    font-family: $primary-font;
     font-weight: 700;
 }
 
@@ -92,10 +87,11 @@ h6, .h6 {
 }
 
 footer {
+    margin-top: 0.5rem;
     background-color: $secondary;
     
     p {
-        color: $primary-text;
+        color: $text;
     }
 }
 
@@ -104,7 +100,7 @@ footer {
 
     font-weight: 600;
     padding: auto;
-    border-radius: 1rem;
+    border-radius: 10px;
     border-width: 0;
     position: relative;
     z-index: 1;
@@ -112,12 +108,13 @@ footer {
 }
 
 .btn-primary {
-    background: $info;
-}
+    background: $brand;
+    color: $primary;
 
-.btn-primary:hover {
-    background: $hover;
-    color: $contrast-text;
+    &:hover {
+        background: $highlight;
+        color: $text;
+    }
 }
 
 .preloader {
@@ -144,9 +141,8 @@ footer {
         width: 0.75rem;
         height: 0.75rem;
         border-radius: 50%;
-        background: $info;
+        background: $brand;
         animation: wave 2s cubic-bezier(0.626, 0, 0, 1) infinite;
-        margin-right: 0.75rem;
     }
 
     div:nth-child(1) { animation-delay: -0.35s; }
@@ -163,14 +159,11 @@ footer {
 
 .map
 {
+    border-radius: 1rem;
     width: auto;
     height: 600px; 
     position: relative; 
     z-index: 10;
-}
-
-.box-shadow {
-    box-shadow: 0, 0.6rem, 2rem, 0, rgba(0, 0, 0, 0.1);
 }
 
 .bg-primary {
@@ -182,10 +175,12 @@ footer {
 }
 
 .navigation {
+    background: $secondary;
+    padding: 0;
+    margin: 0;
 
     .navbar {
         padding: 0;
-        background: $secondary;
         position: relative;
     }
 
@@ -194,19 +189,18 @@ footer {
 
         .nav-item {
             align-self: center;
-            padding: 1rem;
 
             .nav-link {
                 padding: 1rem 1rem;
                 font-family: $secondary-font;
                 font-weight: 600;
-                font-size: 16;
-                color: $primary-text;
+                font-size: 16px;
+                color: $text;
                 transition: .2s ease;
-            }
-
-            :hover {
-                color: $hover;
+            
+                &:hover {
+                    color: $highlight;
+                }
             }
             
             a img {
@@ -216,7 +210,6 @@ footer {
     }
 
     .navbar-brand {
-        background: $secondary;
         text-align: center;
 
         img {
@@ -230,24 +223,20 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 0 5rem 0;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
 
     h2 {
-        color: $contrast-text;
+        color: $primary;
     }
 }
 
 .page-404 {
-    margin-top: 14rem;
-    margin-bottom: 14rem;
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
 
     h1 {
         font-size: 10rem;
-        color: $info;
+        color: $brand;
     }
 }
-
-.content {
-    p {
-        align-content: center;
-    }
-} 

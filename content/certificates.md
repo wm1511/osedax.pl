@@ -1,3 +1,4 @@
 +++
 title = 'Certyfikaty'
+layout = 'certificates'
 +++
