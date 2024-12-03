@@ -8,6 +8,7 @@ $secondary: #708090;
 $brand: #000080;
 $highlight: #ffd700;
 $text: #222222;
+$white: #ffffff;
 
 $debug: #00ff00;
 
@@ -21,8 +22,8 @@ body {
 }
 
 ::selection {
-    background: $highlight;
-    color: $text;
+    background: $brand;
+    color: $primary;
 }
 
 ol, ul {
@@ -48,7 +49,7 @@ a {
     }
 }
 
-p, .paragraph {
+p {
     color: $text;
     font-family: $secondary-font;
     font-weight: 400;
@@ -236,5 +237,44 @@ footer {
     h1 {
         font-size: 10rem;
         color: $brand;
+    }
+}
+
+.accordion {
+
+    .accordion-button {
+        background-color: $secondary;
+
+        &:hover {
+            color: $highlight;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+        
+        &:not(.collapsed) {
+            color: $highlight;
+        }
+    }
+
+    .accordion-body {
+        background-color: $white;
+    }
+
+    .accordion-item {
+        background-color: $primary;
+        border-color: $primary;
+        border-radius: 1rem;
+
+        &:first-of-type > .accordion-header .accordion-button {
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+
+        &:last-of-type > .accordion-header .accordion-button.collapsed {
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
     }
 }

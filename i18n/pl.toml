@@ -14,7 +14,7 @@ other = "Kontakt"
 other = "Wszelkie prawa zastrzeżone"
 
 [flag-link]
-other = "../en.svg"
+other = "en.svg"
 
 [address]
 other = "Siedziba firmy"
@@ -39,3 +39,18 @@ other = "Strona nie istnieje!"
 
 [back-home]
 other = "Wróć do strony głównej"
+
+[proven-quality]
+other = "Potwierdzona jakość"
+
+[link-1090-2]
+other = "1090-2pl.pdf"
+
+[link-3834]
+other = "3834pl.pdf"
+
+[cert-1090-2]
+other = "Certyfikat EN 1090-2 dla klasy EXC3 konstrukcji stalowych"
+
+[cert-3834]
+other = "Certyfikat EN ISO 3834-2"

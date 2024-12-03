@@ -22,7 +22,7 @@
                     <li class="nav-item">
                         {{ range $.Translations }}
                             <a href="{{ .Permalink }}" class="nav-link">
-                                <img class="me-2 align-middle" src="{{ i18n "flag-link" }}"></img>
+                                <img class="me-2 align-middle" src="{{ .Site.BaseURL }}/{{ i18n "flag-link" }}"></img>
                                     {{ .Language.LanguageName }}
                             </a>
                         {{ end }}

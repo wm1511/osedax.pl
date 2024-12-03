@@ -14,7 +14,7 @@ other = "Contact"
 other = "All rights reserved"
 
 [flag-link]
-other = "../../pl.svg"
+other = "pl.svg"
 
 [address]
 other = "Company registration place"
@@ -39,3 +39,18 @@ other = "Page does not exist!"
 
 [back-home]
 other = "Back to home page"
+
+[proven-quality]
+other = "Proven quality"
+
+[link-1090-2]
+other = "1090-2en.pdf"
+
+[link-3834]
+other = "3834en.pdf"
+
+[cert-1090-2]
+other = "EN 1090-2 for EXC3 steel structures certificate"
+
+[cert-3834]
+other = "EN ISO 3834-2 certificate"
