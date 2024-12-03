@@ -1,12 +1,13 @@
 baseURL = 'https://wm1511.github.io/'
-title = 'Osedax'
 defaultContentLanguage = "pl"
 
 [languages]
 [languages.pl]
   languageName = "Polski"
+  title = 'Konstrukcje stalowe i hale'
   weight = 1
 
 [languages.en]
   languageName = "English"
+  title = 'Steel constructions and halls'
   weight = 2
