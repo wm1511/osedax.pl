@@ -6,6 +6,9 @@ window.addEventListener('load', function () {
 
         setTimeout(() => {
             preloader.style.display = 'none';
-        }, 500);
+            preloader.style.visibility = 'hidden';
+        }, 200);
     }
 });
+
+AOS.init();

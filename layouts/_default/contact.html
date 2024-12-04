@@ -2,6 +2,15 @@
 
 {{ partial "title.html" . }}
 
-{{ partial "contact.html" . }}
+<div class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            {{ partial "contact-description.html" . }}
+        </div>
+        <div class="col-md-6">
+            {{ partial "contact-map.html" . }}
+        </div>
+    </div>
+</div>
 
 {{ end }}

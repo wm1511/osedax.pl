@@ -1,3 +1,4 @@
 +++
 title = 'Oferta'
+layout = 'offer'
 +++

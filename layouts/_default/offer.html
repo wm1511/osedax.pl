@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ partial "title.html" . }}
+
+<div class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-lg-12">
+            {{ partial "offer-carousel.html" . }}
+        </div>
+    </div>
+    <div class="row mt-4">
+        {{ partial "offer-grid.html" . }}
+    </div>
+    {{ partial "offer-choose.html" . }}
+    {{ partial "offer-projects.html" . }}
+    {{ partial "offer-contact.html" . }}
+</div>
+
+{{ end }}

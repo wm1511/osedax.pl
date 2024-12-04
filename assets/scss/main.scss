@@ -46,6 +46,8 @@ a {
 
     &:hover {
         color: $highlight;
+        font-weight: 800;
+        text-shadow: 2px 2px $brand;
     }
 }
 
@@ -111,27 +113,19 @@ footer {
     &:hover {
         background: $highlight;
         color: $text;
+        text-shadow: none;
     }
 }
 
 .preloader {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: 99;
     background-color: $primary;
-    display: block;
+    display: flex;
 }
 
 .wave {
     width: 10rem;
     height: 5rem;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     div {
         display: inline-block;
