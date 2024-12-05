@@ -1,30 +1,38 @@
-<div class="col-md-4">
-    <div class="card h-100">
-    <img src="steel-construction-thumbnail.jpg" class="card-img-top" alt="Steel Constructions">
-    <div class="card-body">
-        <h5 class="card-title">Steel Constructions</h5>
-        <p class="card-text">Tailored steel structures for industrial and commercial use.</p>
-        <a href="/steel-constructions" class="btn btn-primary">Learn More</a>
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            {{ $p2 := resources.Get "webp/p2.webp" }}
+            {{ $p2 := $p2.Crop "3000x1500" }}
+            <img src="{{ $p2.RelPermalink }}" class="card-img-top" alt="Steel Constructions">
+            <div class="card-body">
+                <h5 class="card-title">Steel Constructions</h5>
+                <p class="card-text">Tailored steel structures for industrial and commercial use.</p>
+                <a href="/steel-constructions" class="btn btn-primary disabled">Learn More</a>
+            </div>
+        </div>
     </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            {{ $k2 := resources.Get "webp/k2.webp" }}
+            {{ $k2 := $k2.Crop "3000x1500" }}
+            <img src="{{ $k2.RelPermalink }}" class="card-img-top" alt="Ropeways">
+            <div class="card-body">
+                <h5 class="card-title">Ropeways</h5>
+                <p class="card-text">Safe and efficient transport solutions for various terrains.</p>
+                <a href="/ropeways" class="btn btn-primary disabled">Learn More</a>
+            </div>
+        </div>
     </div>
-</div>
-<div class="col-md-4">
-    <div class="card h-100">
-    <img src="ropeways-thumbnail.jpg" class="card-img-top" alt="Ropeways">
-    <div class="card-body">
-        <h5 class="card-title">Ropeways</h5>
-        <p class="card-text">Safe and efficient transport solutions for various terrains.</p>
-        <a href="/ropeways" class="btn btn-primary">Learn More</a>
-    </div>
-    </div>
-</div>
-<div class="col-md-4">
-    <div class="card h-100">
-    <img src="hall-insulation-thumbnail.jpg" class="card-img-top" alt="Production Hall Insulation">
-    <div class="card-body">
-        <h5 class="card-title">Production Hall Insulation</h5>
-        <p class="card-text">Professional insulation and roofing for optimal performance.</p>
-        <a href="/production-hall-insulation" class="btn btn-primary">Learn More</a>
-    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            {{ $o2 := resources.Get "webp/o2.webp" }}
+            {{ $o2 := $o2.Crop "3000x1500" }}
+            <img src="{{ $o2.RelPermalink }}" class="card-img-top" alt="Production Hall Insulation">
+            <div class="card-body">
+                <h5 class="card-title">Production Hall Insulation</h5>
+                <p class="card-text">Professional insulation and roofing for optimal performance.</p>
+                <a href="/production-hall-insulation" class="btn btn-primary disabled">Learn More</a>
+            </div>
+        </div>
     </div>
 </div>

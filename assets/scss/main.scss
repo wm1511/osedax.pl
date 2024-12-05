@@ -191,14 +191,6 @@ footer {
     z-index: 10;
 }
 
-.bg-primary {
-    background-color: $primary;
-}
-
-.bg-secondary {
-    background-color: $secondary;
-}
-
 .navigation {
     background: $secondary;
     padding: 0;
@@ -268,4 +260,47 @@ footer {
     overflow: auto;
     border-radius: 1rem;
     background-color: $white;
+}
+
+.carousel-inner {
+    border-radius: 1rem;
+
+    .carousel-caption {
+        border-radius: 1rem;
+        background-color: rgba($color: $text, $alpha: 0.5);
+
+        p, h5 {
+            color: $white;
+        }
+
+    }
+}
+
+.card, .card-img-top {
+    border-radius: 1rem;
+}
+
+.offer-choose {
+    background-color: $white;
+    border-radius: 1rem;
+}
+
+.offer-contact {
+    background-color: $brand;
+    border-radius: 1rem;
+    
+    h2, p {
+        color: $primary;
+    }
+
+    .btn-primary {
+        background-color: $primary;
+        color: $text;
+
+        &:hover {
+            background: $highlight;
+            color: $text;
+            text-shadow: none;
+        }
+    }
 }
