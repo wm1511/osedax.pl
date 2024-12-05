@@ -1,3 +1,4 @@
 +++
 title = 'Realizacje'
+layout = 'projects'
 +++

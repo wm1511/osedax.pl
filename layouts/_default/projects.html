@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+{{ partial "title.html" . }}
+
+<div class="container py-5">
+    {{ partial "projects-filters.html" . }}
+    {{ partial "projects-grid.html" . }}
+</div>
+
+{{ end }}
