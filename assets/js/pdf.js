@@ -1,92 +1,88 @@
-import { GlobalWorkerOptions } from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.5.136/build/pdf.min.mjs';
+import { GlobalWorkerOptions } from 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.min.mjs';
 
-GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.5.136/build/pdf.worker.min.mjs';
+GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.worker.min.mjs';
 
-var pdfDoc = null,
-    pageNum = 1,
-    pageRendering = false,
-    pageNumPending = null,
-    scale = 1.0,
-    canvas = document.getElementById('canvas'),
-    ctx = canvas.getContext('2d');
+let currentPage = 1;
+let pdfDoc = null;
+let totalPages = 0;
+let scale = 1.0;
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
 
-/**
- * Get page info from document, resize canvas accordingly, and render page.
- * @param num Page number.
- */
-function renderPage(num) {
-    pageRendering = true;
-    // Using promise to fetch the page
-    pdfDoc.getPage(num).then(function (page) {
-        var viewport = page.getViewport({ scale: scale });
-        canvas.height = viewport.height;
+function getSelectedPdf() {
+    const checkedRadio = document.querySelector('input[name="vbtn-radio"]:checked');
+
+    if (checkedRadio) {
+        return checkedRadio.getAttribute('pdf');
+    }
+    
+    return null;
+}
+
+async function renderPDF(url) {
+    try {
+        const pdf = await pdfjsLib.getDocument(url).promise;
+        pdfDoc = pdf;
+        totalPages = pdf.numPages;
+
+        document.getElementById('page_count').textContent = totalPages;
+
+        renderPage(currentPage);
+    } catch (err) {
+        console.error('Error rendering PDF:', err);
+    }
+}
+
+async function renderPage(pageNum) {
+    if (!pdfDoc) return;
+
+    try {
+        const page = await pdfDoc.getPage(pageNum);
+
+        const viewport = page.getViewport({ scale });
+
         canvas.width = viewport.width;
+        canvas.height = viewport.height;
 
-        // Render PDF page into canvas context
-        var renderContext = {
-            canvasContext: ctx,
-            viewport: viewport
+        const renderContext = {
+            canvasContext: context,
+            viewport: viewport,
         };
-        var renderTask = page.render(renderContext);
+        await page.render(renderContext).promise;
 
-        // Wait for rendering to finish
-        renderTask.promise.then(function () {
-            pageRendering = false;
-            if (pageNumPending !== null) {
-                // New page rendering is pending
-                renderPage(pageNumPending);
-                pageNumPending = null;
-            }
-        });
-    });
-
-    // Update page counters
-    document.getElementById('page_num').textContent = num;
-}
-
-/**
- * If another page rendering in progress, waits until the rendering is
- * finised. Otherwise, executes rendering immediately.
- */
-function queueRenderPage(num) {
-    if (pageRendering) {
-        pageNumPending = num;
-    } else {
-        renderPage(num);
+        document.getElementById('page_num').textContent = currentPage;
+    } catch (err) {
+        console.error('Error rendering page:', err);
     }
 }
 
-/**
- * Displays previous page.
- */
-function onPrevPage() {
-    if (pageNum <= 1) {
-        return;
+document.getElementById('prev').addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
     }
-    pageNum--;
-    queueRenderPage(pageNum);
-}
-document.getElementById('prev').addEventListener('click', onPrevPage);
-
-/**
- * Displays next page.
- */
-function onNextPage() {
-    if (pageNum >= pdfDoc.numPages) {
-        return;
-    }
-    pageNum++;
-    queueRenderPage(pageNum);
-}
-document.getElementById('next').addEventListener('click', onNextPage);
-
-/**
- * Asynchronously downloads PDF.
- */
-pdfjsLib.getDocument(document.getElementById('pdf').getAttribute('pdf')).promise.then(function (pdfDoc_) {
-    pdfDoc = pdfDoc_;
-    document.getElementById('page_count').textContent = pdfDoc.numPages;
-
-    // Initial/first page rendering
-    renderPage(pageNum);
 });
+
+document.getElementById('next').addEventListener('click', () => {
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage);
+    }
+});
+
+document.querySelectorAll('input[name="vbtn-radio"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+        const pdfUrl = getSelectedPdf();
+        if (pdfUrl) {
+            currentPage = 1;
+            renderPDF(pdfUrl);
+        }
+    });
+});
+
+window.onload = function () {
+    const pdfUrl = getSelectedPdf();
+    if (pdfUrl) {
+        renderPDF(pdfUrl);
+    }
+};

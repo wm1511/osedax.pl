@@ -121,6 +121,36 @@ footer {
     }
 }
 
+.btn-secondary {
+    background: $secondary;
+    color: $text;
+
+    &:hover {
+        background: $highlight;
+        color: $text;
+        text-shadow: none;
+    }
+
+    &:active {
+        background: $highlight;
+        color: $text;
+        text-shadow: none;
+    }
+}
+
+.btn-check {
+
+    &:checked+.btn {
+        background-color: $highlight;
+        color: $text;
+    }
+
+    &:hover+.btn {
+        background-color: $highlight;
+        color: $text;
+    }
+}
+
 .preloader {
     z-index: 99;
     background-color: $primary;
@@ -234,46 +264,8 @@ footer {
     }
 }
 
-.accordion {
-
-    .accordion-button {
-        background-color: $secondary;
-
-        &:hover {
-            color: $highlight;
-        }
-
-        &:focus {
-            box-shadow: none;
-        }
-        
-        &:not(.collapsed) {
-            color: $highlight;
-        }
-    }
-
-    .accordion-body {
-        background-color: $white;
-    }
-
-    .accordion-item {
-        background-color: $primary;
-        border-color: $primary;
-        border-radius: 1rem;
-
-        &:first-of-type > .accordion-header .accordion-button {
-            border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;
-        }
-
-        &:last-of-type > .accordion-header .accordion-button.collapsed {
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 1rem;
-        }
-    }
+.pdf-display {
+    overflow: auto;
+    border-radius: 1rem;
+    background-color: $white;
 }
-
-canvas {
-    border: 1px solid black;
-    direction: ltr;
-  }

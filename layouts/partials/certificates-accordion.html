@@ -1,40 +1,21 @@
-<div class="accordion" id="accordion">
-    <div class="accordion-item shadow">
-        <h4 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                {{ i18n "cert-1090-2" }}
-            </button>
-        </h4>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion">
-            <div class="accordion-body" id="pdf" pdf="{{ .Site.BaseURL }}/{{ i18n "link-1090-2" }}">
-                <div class="d-flex justify-content-around">
-                    <button class="btn btn-primary me-3 mb-3" id="prev">Previous</button>
-                    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-                    <button class="btn btn-primary me-3 mb-3" id="next">Next</button>
-                </div>
-                  
-                <canvas id="canvas"></canvas>
-            </div>
-        </div>
+<div class="row justify-content-center m-3">
+    <div class="btn-group-vertical py-3" role="group" aria-label="Vertical radio toggle button group">
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" pdf="{{ .Site.BaseURL }}/{{ i18n "link-1090-2" }}" checked>
+        <label class="btn btn-secondary" for="vbtn-radio1">{{ i18n "cert-1090-2" }}</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off" pdf="{{ .Site.BaseURL }}/{{ i18n "link-3834" }}">
+        <label class="btn btn-secondary" for="vbtn-radio2">{{ i18n "cert-3834" }}</label>
     </div>
-    <div class="accordion-item shadow">
-        <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                {{ i18n "cert-3834" }}
-            </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
-            <div class="accordion-body" id="pdf" pdf="{{ .Site.BaseURL }}/{{ i18n "link-3834" }}">
-                <div class="d-flex justify-content-around">
-                    <button class="btn btn-primary me-3 mb-3" id="prev">Previous</button>
-                    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-                    <button class="btn btn-primary me-3 mb-3" id="next">Next</button>
-                </div>
-                  
-                <canvas id="canvas"></canvas>
-            </div>
+
+    <div class="pdf-display shadow">
+        <div class="d-flex justify-content-around">
+            <button class="btn btn-primary my-3" id="prev">{{ i18n "previous" }}</button>
+            <span class="my-3 fw-semibold">{{ i18n "page" }}: <span id="page_num"></span> / <span id="page_count"></span></span>
+            <button class="btn btn-primary my-3" id="next">{{ i18n "next" }}</button>
         </div>
+        
+        <canvas id="canvas"></canvas>
     </div>
 </div>
+
+{{ $pdf := resources.Get "js/pdf.js" }}
+<script type="module" src="{{ $pdf.Permalink }}"></script>

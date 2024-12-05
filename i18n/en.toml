@@ -57,3 +57,12 @@ other = "EN ISO 3834-2 certificate"
 
 [contact-us]
 other = "Contact us"
+
+[previous]
+other = "Previous"
+
+[page]
+other = "Page"
+
+[next]
+other = "Next"
