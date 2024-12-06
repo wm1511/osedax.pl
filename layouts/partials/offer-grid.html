@@ -1,13 +1,15 @@
+{{ $offer := index .Site.Data.offer .Site.Language.Lang }}
+
 <div class="row my-5">
     <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
             {{ $p2 := resources.Get "webp/p2.webp" }}
             {{ $p2 := $p2.Crop "3000x1500" }}
-            <img src="{{ $p2.RelPermalink }}" class="card-img-top" alt="Steel Constructions">
+            <img src="{{ $p2.RelPermalink }}" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title">Steel Constructions</h5>
-                <p class="card-text">Tailored steel structures for industrial and commercial use.</p>
-                <a href="/steel-constructions" class="btn btn-primary disabled">Learn More</a>
+                <h5 class="card-title">{{ $offer.p.title }}</h5>
+                <p class="card-text">{{ $offer.p.description }}</p>
+                <a href="" class="btn btn-primary disabled">{{ i18n "learn-more" }}</a>
             </div>
         </div>
     </div>
@@ -15,11 +17,11 @@
         <div class="card h-100 shadow-sm">
             {{ $k2 := resources.Get "webp/k2.webp" }}
             {{ $k2 := $k2.Crop "3000x1500" }}
-            <img src="{{ $k2.RelPermalink }}" class="card-img-top" alt="Ropeways">
+            <img src="{{ $k2.RelPermalink }}" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title">Ropeways</h5>
-                <p class="card-text">Safe and efficient transport solutions for various terrains.</p>
-                <a href="/ropeways" class="btn btn-primary disabled">Learn More</a>
+                <h5 class="card-title">{{ $offer.k.title }}</h5>
+                <p class="card-text">{{ $offer.k.description }}</p>
+                <a href="" class="btn btn-primary disabled">{{ i18n "learn-more" }}</a>
             </div>
         </div>
     </div>
@@ -27,11 +29,11 @@
         <div class="card h-100 shadow-sm">
             {{ $o2 := resources.Get "webp/o2.webp" }}
             {{ $o2 := $o2.Crop "3000x1500" }}
-            <img src="{{ $o2.RelPermalink }}" class="card-img-top" alt="Production Hall Insulation">
+            <img src="{{ $o2.RelPermalink }}" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title">Production Hall Insulation</h5>
-                <p class="card-text">Professional insulation and roofing for optimal performance.</p>
-                <a href="/production-hall-insulation" class="btn btn-primary disabled">Learn More</a>
+                <h5 class="card-title">{{ $offer.o.title }}</h5>
+                <p class="card-text">{{ $offer.o.description }}</p>
+                <a href="" class="btn btn-primary disabled">{{ i18n "learn-more" }}</a>
             </div>
         </div>
     </div>

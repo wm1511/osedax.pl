@@ -1,5 +1,7 @@
+{{ $offer := index .Site.Data.offer .Site.Language.Lang }}
+
 <div class="offer-contact shadow-sm text-center py-5 my-5">
-    <h2>Ready to Build with Us?</h2>
-    <p>Contact our team today to discuss your project requirements and get a free quote.</p>
-    <a href="/contact" class="btn btn-primary">Contact Us</a>
+    <h2>{{ $offer.contact.title }}</h2>
+    <p>{{ $offer.contact.description }}</p>
+    <a href="{{ relLangURL "contact" }}" class="btn btn-primary mt-3">{{ i18n "contact-us" }}</a>
 </div>

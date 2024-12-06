@@ -1,0 +1,62 @@
+offer:
+  other: Offer
+certificates:
+  other: Certificates
+projects:
+  other: Projects
+contact:
+  other: Contact
+rights:
+  other: All rights reserved
+flag-link:
+  other: pl.svg
+address:
+  other: Company registration place
+production-site:
+  other: Production site
+company-misc:
+  other: Company details
+working-hours:
+  other: Working hours
+mail-phone:
+  other: Email and phone contact
+eu:
+  other: Support
+not-found:
+  other: Page does not exist!
+back-home:
+  other: Back to home page
+proven-quality:
+  other: Proven quality
+link-1090-2:
+  other: 1090-2en.pdf
+link-3834:
+  other: 3834en.pdf
+cert-1090-2:
+  other: EN 1090-2 for EXC3 steel structures certificate
+cert-3834:
+  other: EN ISO 3834-2 certificate
+contact-us:
+  other: Contact us
+previous:
+  other: Previous
+page:
+  other: Page
+next:
+  other: Next
+learn-more:
+  other: Learn more
+view-details:
+  other: View details
+see-more:
+  other: See more
+example-projects:
+  other: Project examples
+projects-w:
+  other: All projects
+projects-p:
+  other: Structures production 
+projects-k:
+  other: Structures assembly
+projects-o:
+  other: Hall housings

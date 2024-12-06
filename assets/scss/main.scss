@@ -288,6 +288,11 @@ footer {
 .offer-contact {
     background-color: $brand;
     border-radius: 1rem;
+
+    ::selection {
+        color: $text;
+        background-color: $highlight;
+    }
     
     h2, p {
         color: $primary;
@@ -302,5 +307,11 @@ footer {
             color: $text;
             text-shadow: none;
         }
+    }
+}
+
+.offer-projects {
+    .img-fluid {
+        border-radius: 1rem;
     }
 }

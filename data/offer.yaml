@@ -1,0 +1,49 @@
+pl:
+  p:
+    title: Produkcja konstrukcji stalowych
+    description: Dedykowane konstrukcje stalowe dla zastosowań komercyjnych i przemysłowych
+  k:
+    title: Montaż konstrukcji stalowych
+    description: Niezawodny montaż konstrukcji stalowych gwarantujący odporność na najbardziej wymagające warunki
+  o: 
+    title: Montaż obudów hal produkcyjnych
+    description: Profesjonalna izolacja termiczna i pokrycia dachowe gwarantujące najwyższą wydajność
+
+  choose:
+    title: Dlaczego my?
+    description: Dostarczamy innowacyjne rozwiązania o najwyższej jakości i niezawodności
+    t1: Doświadczenie
+    d1: Dzięki naszemu wieloletniemu doświadczeniu w dziedzinie konstrukcji stalowych realizujemy innowacyjne projekty i rozwiązania dostosowane do potrzeb klientów
+    t2: Jakość potwierdzona certyfikatem
+    d2: Jakość naszych produktów jest potwierdzona posiadanymi certyfikatami oraz stosowaniem certyfikowanych materiałów i procesów
+    t3: Wykwalifikowana kadra
+    d3: Nasz zespół wykwalifikowanych profesjonalistów zapewnia fachowe wykonanie i wiedzę techniczną, dzięki czemu każdy projekt jest realizowany z precyzją i dbałością o szczegóły
+
+  contact:
+    title: Gotowy do rozpoczęcia projektu?
+    description: Zapraszamy do kontaktu w celu omówienia wymagań projektowych i otrzymania wyceny
+
+en:
+  p:
+    title: Steel structures production
+    description: Dedicated steel structures for commercial and industrial applications
+  k:
+    title: Assembly of steel structures
+    description: Reliable steel structure assembly that guarantees resistance to the most demanding conditions
+  o: 
+    title: Assembly of production hall housings
+    description: Professional thermal insulation and roofing for maximum performance
+
+  choose:
+    title: Why us?
+    description: We provide innovative solutions with the highest quality and reliability
+    t1: Experience
+    d1: Thanks to our many years of experience in the field of steel structures, we implement innovative projects and solutions tailored to our customers' needs
+    t2: Certified quality
+    d2: The quality of our products is confirmed by our certifications and the use of certified materials and processes
+    t3: Skilled Staff
+    d3: Our team of skilled professionals provides expert workmanship and technical knowledge to ensure that each project is carried out with precision and attention to detail
+
+  contact:
+    title: Ready to start your project?
+    description: Feel free to contact us to discuss your project requirements and get a quote

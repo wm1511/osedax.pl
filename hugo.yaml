@@ -1,0 +1,13 @@
+baseURL: https://osedax.pl
+defaultContentLanguage: pl
+
+languages:
+  pl:
+    languageName: Polski
+    title: Konstrukcje stalowe i hale
+    weight: 1
+
+  en:
+    languageName: English
+    title: Steel constructions and halls
+    weight: 2

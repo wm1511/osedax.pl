@@ -1,0 +1,39 @@
+pl:
+  - 2021:
+    - 0:
+      title: Kolej linowa Solina
+      description: Wykonanie i dostawa konstrukcji stalowej podpór trasowych kolei linowej Solina
+      image: 0.1.webp
+      link: placeholder
+  - 2020:
+    - 0:
+      title: FONTE
+      description: FONTE
+      image: 0.1.webp
+      link: placeholder
+  - 2019:
+    - 0:
+      title: Szklarnia nr 5 w Ogrodzie Botanicznym Uniwersytetu Jagiellońskiego
+      description: Wykonanie i montaż konstrukcji stalowej budynku szklarni nr 5 i zimownika w kompleksie szklarni Victoria
+      image: 0.1.webp
+      link: placeholder
+
+en:
+  - 2021:
+    - 0:
+      title: Solina ropeway
+      description: Construction and delivery of the steel structure of the route supports of the Solina ropeway
+      image: 0.1.webp
+      link: placeholder
+  - 2020:
+    - 0:
+      title: FONTE
+      description: FONTE
+      image: 0.1.webp
+      link: placeholder
+  - 2019:
+    - 0:
+      title: Greenhouse No. 5 in Botanical Garden of the Jagiellonian University
+      description: Construction and installation of the steel structure of greenhouse building No. 5 and the winterhouse in the Victoria greenhouse complex
+      image: 0.1.webp
+      link: placeholder

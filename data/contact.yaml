@@ -1,0 +1,23 @@
+address:
+  n1: OSEDAX
+  n2: OSEDAX Dariusz Merta
+  a1: ul. Krótka 8
+  a2: 43-332, Pisarzowice
+
+production:
+  a3: ul. Zatorska 23
+  a4: 34-122, Gierałtowice
+
+misc:
+  m1: "9371038131"
+  m2: "072325660"
+
+hours:
+  open: 7:00
+  close: 16:00
+  
+list:
+  - i1: biuro.osedax@vp.pl
+    i2: 507429459
+  - i1: osedax@vp.pl
+    i2: 607227073
