@@ -1,15 +1,23 @@
 {{ $all := index .Site.Data.projects .Site.Language.Lang }}
 
+{{ $years := slice }}
+{{ range $year, $_ := $all }}
+  {{ $years = $years | append $year }}
+{{ end }}
+{{ $sortedYears := sort $years "value" "desc" }}
+
 <div class="row my-4">
-	{{ range $first := $all }}
-	{{ range $year, $projects := $first }}
+	{{ range $year := $sortedYears }}
+	{{ $projects := index $all $year }}
 	<div class="year col-12 my-4">
 		<h2>{{ $year }}</h2>
 		<div class="row">
 			{{ range $index, $details := $projects }}
 			<div class="col-md-4 mb-3" data-category="{{ delimit .categories " " }}">
-				<div class="card card-expandable shadow-sm" data-bs-toggle="modal" data-bs-target="#modal-{{ $year }}-{{ $index }}">
-					{{ $thumbnail := resources.Get (printf "/webp/%s/%d.1.webp" $year $index) }}
+				<div class="card card-expandable shadow-sm" data-bs-toggle="modal"
+					data-bs-target="#modal-{{ $year }}-{{ $index }}">
+					{{ $thumbnail := resources.Get (printf "/webp/%s/%s.1.webp" $year $index) }}
+					{{ $thumbnail := $thumbnail.Resize "600x" }}
 					<img src="{{ $thumbnail.RelPermalink }}" class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title">{{ .title }}</h5>
@@ -17,38 +25,40 @@
 					</div>
 				</div>
 			</div>
-			<div class="modal fade" id="modal-{{ $year }}-{{ $index }}" tabindex="-1" aria-labelledby="modalLabel-{{ $year }}-{{ $index }}">
+			<div class="modal fade" id="modal-{{ $year }}-{{ $index }}" tabindex="-1"
+				aria-labelledby="modalLabel-{{ $year }}-{{ $index }}">
 				<div class="modal-dialog modal-lg">
-				  <div class="modal-content">
-					<div class="modal-header">
-					  <h5 class="modal-title" id="modalLabel-{{ $year }}-{{ $index }}">{{ .title }}</h5>
-					  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					  <div id="carousel-{{ $year }}-{{ $index }}" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-inner">
-							{{ range seq 1 10 }}
-							{{ $image := resources.Get (printf "/webp/%s/%d.%d.webp" $year $index (.))}}
-							{{ if not $image }} {{ break }} {{ end }}
-							<div class="carousel-item {{ if eq . 1 }}active{{ end }}">
-							  <img src="{{ $image.RelPermalink }}" class="img-fluid">
-							</div>
-							{{ end }}
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modalLabel-{{ $year }}-{{ $index }}">{{ .title }}</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ $year }}-{{ $index }}" data-bs-slide="prev">
-						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ $year }}-{{ $index }}" data-bs-slide="next">
-						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						</button>
-					  </div>
+						<div class="modal-body">
+							<div id="carousel-{{ $year }}-{{ $index }}" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									{{ range seq 1 10 }}
+									{{ $image := resources.Get (printf "/webp/%s/%s.%d.webp" $year $index (.))}}
+									{{ if not $image }} {{ break }} {{ end }}
+									<div class="carousel-item {{ if eq . 1 }}active{{ end }}">
+										<img src="{{ $image.RelPermalink }}" class="img-fluid lazyload">
+									</div>
+									{{ end }}
+								</div>
+								<button class="carousel-control-prev" type="button"
+									data-bs-target="#carousel-{{ $year }}-{{ $index }}" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								</button>
+								<button class="carousel-control-next" type="button"
+									data-bs-target="#carousel-{{ $year }}-{{ $index }}" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								</button>
+							</div>
+						</div>
 					</div>
-				  </div>
 				</div>
-			  </div>
+			</div>
 			{{ end }}
 		</div>
 	</div>
-	{{ end }}
 	{{ end }}
 </div>

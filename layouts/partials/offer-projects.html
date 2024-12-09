@@ -4,28 +4,40 @@
 	<h2 class="text-center my-3">{{ i18n "example-projects" }}</h2>
 	<div class="row">
 		<div class="col-md-4 my-3">
-			{{ $p1 := resources.Get "webp/2019/0.1.webp" }}
-			{{ $p1 := $p1.Crop "3000x3000 Top" }}
-			{{ $d1 := index (index (index $all 2) "2019") 0 }}
-			<img src="{{ $p1.RelPermalink }}" class="img-fluid mb-2 shadow-sm">
-			<h5>{{ $d1.title }}</h5>
-			<p>{{ $d1.description }}</p>
+			<div class="card shadow-sm">
+				{{ $p1 := resources.Get "webp/2019/0.1.webp" }}
+				{{ $p1 := $p1.Resize "600x" }}
+				{{ $d1 := index (index $all "2019") "0" }}
+				<img src="{{ $p1.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
+				<div class="card-body">
+					<h5 class="card-title">{{ $d1.title }}</h5>
+					<p class="card-text">{{ $d1.description }}</p>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-4 my-3">
-			{{ $p3 := resources.Get "webp/2021/0.1.webp" }}
-			{{ $p3 := $p3.Crop "3000x3000" }}
-			{{ $d3 := index (index (index $all 0) "2021") 0 }}
-			<img src="{{ $p3.RelPermalink }}" class="img-fluid mb-2 shadow-sm">
-			<h5>{{ $d3.title }}</h5>
-			<p>{{ $d3.description }}</p>
+			<div class="card shadow-sm">
+				{{ $p3 := resources.Get "webp/2021/0.1.webp" }}
+				{{ $p3 := $p3.Resize "600x" }}
+				{{ $d3 := index (index $all "2021") "0" }}
+				<img src="{{ $p3.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
+				<div class="card-body">
+					<h5 class="card-title">{{ $d3.title }}</h5>
+					<p class="card-text">{{ $d3.description }}</p>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-4 my-3">
-			{{ $p2 := resources.Get "webp/2020/0.1.webp" }}
-			{{ $p2 := $p2.Crop "3000x2000 TopLeft" }}
-			{{ $d2 := index (index (index $all 1) "2020") 0 }}
-			<img src="{{ $p2.RelPermalink }}" class="img-fluid mb-2 shadow-sm">
-			<h5>{{ $d2.title }}</h5>
-			<p>{{ $d2.description }}</p>
+			<div class="card shadow-sm">
+				{{ $p2 := resources.Get "webp/2020/0.1.webp" }}
+				{{ $p2 := $p2.Resize "600x" }}
+				{{ $d2 := index (index $all "2020") "0"}}
+				<img src="{{ $p2.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
+				<div class="card-body">
+					<h5 class="card-title">{{ $d2.title }}</h5>
+					<p class="card-text">{{ $d2.description }}</p>
+				</div>
+			</div>
 			<div class="text-center my-5 mx-3">
 				<a href="{{ relLangURL "projects" }}" class="btn btn-primary w-100">{{ i18n "see-more" }}</a>
 			</div>

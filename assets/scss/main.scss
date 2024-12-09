@@ -151,37 +151,6 @@ footer {
     }
 }
 
-.preloader {
-    z-index: 99;
-    background-color: $primary;
-    display: flex;
-}
-
-.wave {
-    width: 10rem;
-    height: 5rem;
-
-    div {
-        display: inline-block;
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        background: $brand;
-        animation: wave 2s cubic-bezier(0.626, 0, 0, 1) infinite;
-    
-        &:nth-child(1) { animation-delay: -0.35s; }
-        &:nth-child(2) { animation-delay: -0.26s; }
-        &:nth-child(3) { animation-delay: -0.17s; }
-        &:nth-child(4) { animation-delay: -0.09s; }
-    }
-
-    @keyframes wave {
-        0% { transform: scale(1.5) translateY(0); }
-        50% { transform: scale(1.0) translateY(3rem); }
-        100% { transform: translateY(0); }
-    }
-}
-
 .map
 {
     border-radius: 1rem;
@@ -271,7 +240,6 @@ footer {
         p, h5 {
             color: $white;
         }
-
     }
 }
 

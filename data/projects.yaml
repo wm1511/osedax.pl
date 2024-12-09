@@ -1,105 +1,163 @@
 pl:
-  - 2021:
-    - 0:
+  2021:
+    0:
       title: Kolej linowa Solina
       description: Wykonanie i dostawa konstrukcji stalowej podpór trasowych kolei linowej Solina
       categories:
       - p
-  - 2020:
-    - 0:
+  2020:
+    0:
       title: Hala produkcyjna Fonte
       description: Montaż płyt warstwowych oraz konstrukcji stalowej attyki
       categories:
       - p
       - k
       - o
-  - 2019:
-    - 0:
+  2019:
+    0:
       title: Szklarnia nr 5 w Ogrodzie Botanicznym Uniwersytetu Jagiellońskiego
       description: Wykonanie i montaż konstrukcji stalowej budynku szklarni nr 5 i zimownika w kompleksie szklarni Victoria
       categories:
       - p
       - k
-    - 1:
+    1:
       title: Zakład produkcyjny KIZO w Mikołowie
       description: Wykonanie i montaż konstrukcji stalowej hali produkcyjnej
       categories:
       - p
       - k
-  - 2018:
-    - 0:
+  2018:
+    0:
       title: Hala magazynowa Bobrek w Dąbrowie Górniczej
       description: Wykonanie i montaż konstrukcji stalowej oraz obudowa dachu i ścian hali magazynowej
       categories:
       - p
       - k
       - o
-    - 1:
+    1:
       title: Hala produkcyjno-magazynowa BIBP w Zatorze
       description: Wykonanie i montaż konstrukcji stalowej oraz obudowa dachu i ścian
       categories:
       - p
       - k
       - o
-    - 2:
+    2:
       title: Wytwórnia Napojów Chłodzących SAHARA
       description: Wykonanie i montaż konstrukcji stalowej oraz obudowa dachu i ścian
       categories:
       - p
       - k
       - o
-    - 3:
+    3:
       title: Kolej Linowa Słotwinka
       description: Wykonanie konstrukcji stalowej dla kolei linowej Słotwinka w Krynicy Zdroju
       categories:
       - p
-  - 2017:
-    - 0:
+  2017:
+    0:
       title: Elektrociepłownia Gliwice
       description: Przebudowa istniejącego budynku - wymiana elewacji zewnętrznej na płyty warstwowe
       categories:
       - o
-    - 1:
+    1:
       title: Przemiałownia mączki w Raciszynie
-      description: Wykonanie i montaż konstrukcji wsporczej silosów - Przemiałownia Mączki Kamienia Wapiennego
+      description: Wykonanie i montaż konstrukcji wsporczej silosów - Przemiałownia mączki kamienia wapiennego
       categories:
       - p
       - k
-    - 2:
+    2:
       title: Hangar CASA w Balicach
       description: Wykonanie i montaż konstrukcji dachu wraz z podkonstrukcją bramy przesuwnej
       categories:
       - p
       - k
-  - 2016:
-    - 0:
+  2016:
+    0:
       title: Hala Fob-Decor w Turzy
       description: Wykonanie i montaż konstrukcji stalowej hali biuro-produkcyjno-magazynowej oraz obudowa dachu i ścian
       categories:
       - p
       - k
       - o
-    
 
 en:
-  - 2021:
-    - 0:
+  2021:
+    0:
       title: Solina ropeway
       description: Construction and delivery of the steel structure of the route supports of the Solina ropeway
       categories:
       - p
-  - 2020:
-    - 0:
+  2020:
+    0:
       title: Fonte production hall
       description: Installation of composite panels and attic steel structure
       categories:
       - p
       - k
       - o
-  - 2019:
-    - 0:
+  2019:
+    0:
       title: Greenhouse No. 5 in Botanical Garden of the Jagiellonian University
       description: Construction and installation of the steel structure of greenhouse building No. 5 and the winterhouse in the Victoria greenhouse complex
       categories:
       - p
       - k
+    1:
+      title: KIZO production plant in Mikolow
+      description: Fabrication and installation of production hall steel structure
+      categories:
+      - p
+      - k
+  2018:
+    0:
+      title: Bobrek storage hall in Dąbrowa Górnicza
+      description: Fabrication and installation of steel structure and roof and wall casing of storage hall
+      categories:
+      - p
+      - k
+      - o
+    1:
+      title: BIBP production and storage hall in Zator
+      description: Fabrication and installation of steel structure and roof and wall casing
+      categories:
+      - p
+      - k
+      - o
+    2:
+      title: SAHARA Refrigerated Beverage Plant
+      description: Fabrication and installation of steel structure and roof and wall casing
+      categories:
+      - p
+      - k
+      - o
+    3:
+      title: Słotwinka ropeway
+      description: Construction of steel structure for Słotwinka ropeway in Krynica Zdrój
+      categories:
+      - p
+  2017:
+    0:
+      title: Gliwice Combined Heat and Power Plant
+      description: Reconstruction of existing building - replacement of exterior facade with composite panels
+      categories:
+      - o
+    1:
+      title: Milling plant in Raciszyn
+      description: Construction and installation of support structure for silos - Limestone meal milling plant
+      categories:
+      - p
+      - k
+    2:
+      title: CASA Hangar in Balice
+      description: Fabrication and installation of roof structure with sliding gate substructure
+      categories:
+      - p
+      - k
+  2016:
+    0:
+      title: Fob-Decor hall in Turza
+      description: Construction and installation of the steel structure of the office-production-warehouse hall, as well as the roof and wall casing
+      categories:
+      - p
+      - k
+      - o
