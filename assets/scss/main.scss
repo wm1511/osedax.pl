@@ -239,12 +239,11 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5rem 0 5rem 0;
-    margin-top: 0.5rem;
-    border-radius: 1rem;
+    padding: 8rem 0 8rem 0;
 
-    h2 {
+    h1 {
         color: $primary;
+        opacity: 0.8;
     }
 }
 
@@ -310,8 +309,23 @@ footer {
     }
 }
 
-.offer-projects {
-    .img-fluid {
-        border-radius: 1rem;
+.img-fluid {
+    border-radius: 1rem;
+}
+
+.icon {
+    height: 1rem;
+}
+
+.modal-content {
+    border-radius: 1rem;
+}
+
+.card-expandable {
+    transition: .2s ease;
+
+    &:hover {
+        transform: scale(1.025);
+        opacity: 0.5;
     }
 }

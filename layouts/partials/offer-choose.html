@@ -1,22 +1,22 @@
 {{ $offer := index .Site.Data.offer .Site.Language.Lang }}
 
 <div class="offer-choose shadow-sm py-5 my-5">
-  <div class="container text-center">
-    <h2>{{ $offer.choose.title }}</h2>
-    <p class="mb-5">{{ $offer.choose.description }}</p>
-    <div class="row">
-      <div class="col-md-4">
-        <h5>{{ $offer.choose.t1 }}</h5>
-        <p>{{ $offer.choose.d1 }}</p>
-      </div>
-      <div class="col-md-4">
-        <h5>{{ $offer.choose.t2 }}</h5>
-        <p>{{ $offer.choose.d2 }}</p>
-      </div>
-      <div class="col-md-4">
-        <h5>{{ $offer.choose.t3 }}</h5>
-        <p>{{ $offer.choose.d3 }}</p>
-      </div>
-    </div>
-  </div>
+	<div class="container text-center">
+		<h2>{{ $offer.choose.title }}</h2>
+		<p class="mb-5">{{ $offer.choose.description }}</p>
+		<div class="row">
+			<div class="col-md-4">
+				<h5>{{ $offer.choose.t1 }}</h5>
+				<p>{{ $offer.choose.d1 }}</p>
+			</div>
+			<div class="col-md-4">
+				<h5>{{ $offer.choose.t2 }}</h5>
+				<p>{{ $offer.choose.d2 }}</p>
+			</div>
+			<div class="col-md-4">
+				<h5>{{ $offer.choose.t3 }}</h5>
+				<p>{{ $offer.choose.d3 }}</p>
+			</div>
+		</div>
+	</div>
 </div>
