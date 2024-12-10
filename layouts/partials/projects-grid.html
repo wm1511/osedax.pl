@@ -34,13 +34,13 @@
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
-							<div id="carousel-{{ $year }}-{{ $index }}" class="carousel slide" data-bs-ride="carousel">
+							<div id="carousel-{{ $year }}-{{ $index }}" class="carousel slide" data-bs-ride="true">
 								<div class="carousel-inner">
 									{{ range seq 1 10 }}
 									{{ $image := resources.Get (printf "/webp/%s/%s.%d.webp" $year $index (.))}}
 									{{ if not $image }} {{ break }} {{ end }}
 									<div class="carousel-item {{ if eq . 1 }}active{{ end }}">
-										<img src="{{ $image.RelPermalink }}" class="img-fluid lazyload">
+										<img src="{{ $image.RelPermalink }}" class="img-fluid w-100">
 									</div>
 									{{ end }}
 								</div>

@@ -1,9 +1,11 @@
 <header>
     <div class="row navigation">
         <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand col-md-4" href="{{ .Site.BaseURL | relLangURL }}">
-                <img class="me-2 align-middle" src="{{ .Site.BaseURL }}/logo.svg"></img>
-            </a>
+            <div class="navbar-brand col-md-4">
+                <a href="{{ .Site.BaseURL | relLangURL }}">
+                    <img class="me-2 align-middle" src="{{ .Site.BaseURL }}/logo.svg"></img>
+                </a>
+            </div>
 
             <div class="navbar-collapse col-md-8" id="navigation">
                 <ul class="navbar-nav">

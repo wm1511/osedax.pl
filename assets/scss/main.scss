@@ -216,12 +216,21 @@ footer {
     }
 }
 
+.site-map {
+    line-height: 2rem;
+    padding-left: 0;
+}
+
 .page-404 {
  
     h1 {
         font-size: 10rem;
         color: $brand;
     }
+}
+
+.img-single {
+    border-radius: 1rem;
 }
 
 .pdf-display {
@@ -232,12 +241,11 @@ footer {
 
 .carousel-inner {
     border-radius: 1rem;
-
     .carousel-caption {
         border-radius: 1rem;
         background-color: rgba($color: $text, $alpha: 0.5);
 
-        p, h5 {
+        h4 {
             color: $white;
         }
     }
@@ -277,16 +285,20 @@ footer {
     }
 }
 
-.img-fluid {
-    border-radius: 1rem;
+.icon-sm {
+    height: 1rem;
 }
 
-.icon {
-    height: 1rem;
+.icon-md {
+    height: 2.5rem;
 }
 
 .modal-content {
     border-radius: 1rem;
+
+    img {
+        border-radius: 1rem;
+    }
 }
 
 .card-expandable {

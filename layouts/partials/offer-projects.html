@@ -1,45 +1,47 @@
 {{ $all := index .Site.Data.projects .Site.Language.Lang }}
 
-<div class="offer-projects container my-5">
-	<h2 class="text-center my-3">{{ i18n "example-projects" }}</h2>
-	<div class="row">
-		<div class="col-md-4 my-3">
-			<div class="card shadow-sm">
-				{{ $p1 := resources.Get "webp/2019/0.1.webp" }}
-				{{ $p1 := $p1.Resize "600x" }}
-				{{ $d1 := index (index $all "2019") "0" }}
-				<img src="{{ $p1.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
-				<div class="card-body">
-					<h5 class="card-title">{{ $d1.title }}</h5>
-					<p class="card-text">{{ $d1.description }}</p>
+<div class="row">
+	<div class="offer-projects container my-5">
+		<h2 class="text-center my-4">{{ i18n "example-projects" }}</h2>
+		<div class="row">
+			<div class="col-md-4 my-3">
+				<div class="card shadow-sm">
+					{{ $p1 := resources.Get "webp/2019/0.1.webp" }}
+					{{ $p1 := $p1.Resize "600x" }}
+					{{ $d1 := index (index $all "2019") "0" }}
+					<img src="{{ $p1.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title">{{ $d1.title }}</h5>
+						<p class="card-text">{{ $d1.description }}</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-4 my-3">
-			<div class="card shadow-sm">
-				{{ $p3 := resources.Get "webp/2021/0.1.webp" }}
-				{{ $p3 := $p3.Resize "600x" }}
-				{{ $d3 := index (index $all "2021") "0" }}
-				<img src="{{ $p3.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
-				<div class="card-body">
-					<h5 class="card-title">{{ $d3.title }}</h5>
-					<p class="card-text">{{ $d3.description }}</p>
+			<div class="col-md-4 my-3">
+				<div class="card shadow-sm">
+					{{ $p3 := resources.Get "webp/2021/0.1.webp" }}
+					{{ $p3 := $p3.Resize "600x" }}
+					{{ $d3 := index (index $all "2021") "0" }}
+					<img src="{{ $p3.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title">{{ $d3.title }}</h5>
+						<p class="card-text">{{ $d3.description }}</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-4 my-3">
-			<div class="card shadow-sm">
-				{{ $p2 := resources.Get "webp/2020/0.1.webp" }}
-				{{ $p2 := $p2.Resize "600x" }}
-				{{ $d2 := index (index $all "2020") "0"}}
-				<img src="{{ $p2.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
-				<div class="card-body">
-					<h5 class="card-title">{{ $d2.title }}</h5>
-					<p class="card-text">{{ $d2.description }}</p>
+			<div class="col-md-4 my-3">
+				<div class="card shadow-sm">
+					{{ $p2 := resources.Get "webp/2020/0.1.webp" }}
+					{{ $p2 := $p2.Resize "600x" }}
+					{{ $d2 := index (index $all "2020") "0"}}
+					<img src="{{ $p2.RelPermalink }}" class="card-img-top mb-2 shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title">{{ $d2.title }}</h5>
+						<p class="card-text">{{ $d2.description }}</p>
+					</div>
 				</div>
-			</div>
-			<div class="text-center my-5 mx-3">
-				<a href="{{ relLangURL "projects" }}" class="btn btn-primary w-100">{{ i18n "see-more" }}</a>
+				<div class="text-center my-5 mx-3">
+					<a href="{{ relLangURL "projects" }}" class="btn btn-primary w-100">{{ i18n "see-more" }}</a>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -3,7 +3,7 @@
 {{ partial "title.html" . }}
 
 <div class="container py-5">
-    {{ partial "offer-grid.html" . }}
+    {{ partial "offer-grid.html" (dict "context" . "variant" 2 ) }}
     {{ partial "offer-choose.html" . }}
     {{ partial "offer-projects.html" . }}
     {{ partial "offer-contact.html" . }}

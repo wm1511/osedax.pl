@@ -35,11 +35,11 @@
         {{ range .Site.Data.contact.list }}
         <li class="mb-2">
             <a href="mailto:{{ .i1 }}">
-                <img class="icon me-2 align-middle" src="{{ .Site.BaseURL }}/mail.svg"></img>
+                <img class="icon-sm me-2 align-middle" src="{{ .Site.BaseURL }}/mail.svg"></img>
                 {{ .i1 }}
             </a>
             <a href="callto:{{ .i2 }}">
-                <img class="icon ms-4 me-2 align-middle" src="{{ .Site.BaseURL }}/phone.svg"></img>
+                <img class="icon-sm ms-4 me-2 align-middle" src="{{ .Site.BaseURL }}/phone.svg"></img>
                 {{ .i2 }}
             </a>
         </li>

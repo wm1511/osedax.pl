@@ -1,40 +1,22 @@
-<div id="offerCarousel" class="carousel slide" data-bs-ride="carousel">
-	<div class="carousel-inner shadow">
-		<div class="carousel-item active">
-			{{ $p1 := resources.Get "webp/p1.webp" }}
-			{{ $p1 := $p1.Crop "3000x1500" }}
-			<img src="{{ $p1.RelPermalink }}" class="img-fluid">
-			<div class="carousel-caption">
-				<h5>Steel Constructions</h5>
-				<p>High-quality steel structures for production halls and industrial buildings.</p>
-				<a href="/steel-constructions" class="btn btn-primary disabled">Read More</a>
+<div class="row">
+	<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner shadow">
+			{{ range $index, $carousel := (index .Site.Data.index .Site.Language.Lang).carousel }}
+			{{ $image := resources.Get (printf "/webp/%s.webp" $carousel.image) }}
+			{{ if $image }}{{ $image.Crop "3000x1500" }}{{ end }}
+			<div class="carousel-item{{ if eq $index 0 }} active{{ end }}">
+				<img src="{{ if $image }}{{ $image.RelPermalink }}{{ else }}https://placehold.jp/3000x1500.png{{ end }}" class="img-fluid">
+				<div class="carousel-caption">
+					{{ if not $image }}<p style="color: #00ff00;">Obraz: {{ $carousel.content }}</p>{{ end }}
+					<h4>{{ $carousel.caption }}</h4>
+				</div>
 			</div>
-		</div>
-		<div class="carousel-item">
-			{{ $k1 := resources.Get "webp/k1.webp" }}
-			{{ $k1 := $k1.Crop "3000x1500" }}
-			<img src="{{ $k1.RelPermalink }}" class="img-fluid">
-			<div class="carousel-caption">
-				<h5>Ropeways</h5>
-				<p>Advanced engineering for safe and efficient ropeway systems.</p>
-				<a href="/ropeways" class="btn btn-primary disabled">Read More</a>
-			</div>
-		</div>
-		<div class="carousel-item">
-			{{ $o1 := resources.Get "webp/o1.webp" }}
-			{{ $o1 := $o1.Crop "3000x1500" }}
-			<img src="{{ $o1.RelPermalink }}" class="img-fluid">
-			<div class="carousel-caption">
-				<h5>Ropeways</h5>
-				<p>Advanced engineering for safe and efficient ropeway systems.</p>
-				<a href="/ropeways" class="btn btn-primary disabled">Read More</a>
-			</div>
+			{{ end }}
+			<button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</button>
 		</div>
 	</div>
-	<button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	</button>
-	<button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-	</button>
-</div>

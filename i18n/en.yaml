@@ -1,60 +1,34 @@
-offer:
-  other: Offer
-certificates:
-  other: Certificates
-projects:
-  other: Projects
-contact:
-  other: Contact
-rights:
-  other: All rights reserved
-flag-link:
-  other: pl.svg
-address:
-  other: Company registration place
-production-site:
-  other: Production site
-company-misc:
-  other: Company details
-working-hours:
-  other: Working hours
-mail-phone:
-  other: Email and phone contact
-eu:
-  other: Support
-not-found:
-  other: Page does not exist!
-back-home:
-  other: Back to home page
-proven-quality:
-  other: Proven quality
-link-1090-2:
-  other: 1090-2en.pdf
-link-3834:
-  other: 3834en.pdf
-cert-1090-2:
-  other: EN 1090-2 for EXC3 steel structures certificate
-cert-3834:
-  other: EN ISO 3834-2 certificate
-contact-us:
-  other: Contact us
-previous:
-  other: Previous
-page:
-  other: Page
-next:
-  other: Next
-learn-more:
-  other: Learn more
-view-details:
-  other: View details
-example-projects:
-  other: Project examples
-projects-w:
-  other: All projects
-projects-p:
-  other: Structures production 
-projects-k:
-  other: Structures assembly
-projects-o:
-  other: Hall housings
+offer: Offer
+certificates: Certificates
+projects: Projects
+contact: Contact
+rights: All rights reserved
+flag-link: pl.svg
+address: Company registration place
+production-site: Production site
+company-misc: Company details
+working-hours: Working hours
+mail-phone: Email and phone contact
+eu: Support
+not-found: Page does not exist!
+back-home: Back to home page
+proven-quality: Proven quality
+link-1090-2: 1090-2en.pdf
+link-3834: 3834en.pdf
+cert-1090-2: EN 1090-2 for EXC3 steel structures certificate
+cert-3834: EN ISO 3834-2 certificate
+contact-us: Contact us
+about-us: About us
+previous: Previous
+page: Page
+next: Next
+learn-more: Learn more
+see-more: See more
+example-projects: Project examples
+projects-w: All projects
+projects-p: Structures production 
+projects-k: Structures assembly
+projects-o: Hall housings
+main: Home page
+site-map: Site map
+our-offer: Our offer

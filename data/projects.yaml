@@ -13,6 +13,13 @@ pl:
       - p
       - k
       - o
+    1:
+      title: Hangar w Goczałkowicach-Zdroju
+      description: Wykonanie i montaż konstrukcji stalowej oraz obudowa dachu i ścian hangaru
+      categories:
+      - p
+      - k
+      - o
   2019:
     0:
       title: Szklarnia nr 5 w Ogrodzie Botanicznym Uniwersytetu Jagiellońskiego
@@ -21,6 +28,13 @@ pl:
       - p
       - k
     1:
+      title: Hala magazynowa Investment w Katowicach
+      description: Wykonanie i montaż konstrukcji stalowej oraz obudowa dachu i ścian
+      categories:
+      - p
+      - k
+      - o
+    2:
       title: Zakład produkcyjny KIZO w Mikołowie
       description: Wykonanie i montaż konstrukcji stalowej hali produkcyjnej
       categories:

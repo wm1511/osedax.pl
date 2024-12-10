@@ -1,60 +1,34 @@
-offer:
-  other: Oferta
-certificates:
-  other: Certyfikaty
-projects:
-  other: Realizacje
-contact:
-  other: Kontakt
-rights:
-  other: Wszelkie prawa zastrzeżone
-flag-link:
-  other: en.svg
-address:
-  other: Siedziba firmy
-production-site:
-  other: Zakład produkcyjny
-company-misc:
-  other: Dane firmy
-working-hours:
-  other: Godziny otwarcia
-mail-phone:
-  other: Kontakt mailowy i telefoniczny
-eu:
-  other: Wsparcie
-not-found:
-  other: Strona nie istnieje!
-back-home:
-  other: Wróć do strony głównej
-proven-quality:
-  other: Potwierdzona jakość
-link-1090-2:
-  other: 1090-2pl.pdf
-link-3834:
-  other: 3834pl.pdf
-cert-1090-2:
-  other: Certyfikat EN 1090-2 dla klasy EXC3 konstrukcji stalowych
-cert-3834:
-  other: Certyfikat EN ISO 3834-2
-contact-us:
-  other: Skontaktuj się z nami
-previous:
-  other: Poprzednia
-page:
-  other: Strona
-next:
-  other: Następna
-learn-more:
-  other: Dowiedz się więcej
-see-more:
-  other: Zobacz więcej
-example-projects:
-  other: Przykładowe projekty
-projects-w:
-  other: Wszystkie realizacje
-projects-p:
-  other: Produkcja konstrukcji
-projects-k:
-  other: Montaż konstrukcji
-projects-o:
-  other: Obudowy hal
+offer: Oferta
+certificates: Certyfikaty
+projects: Realizacje
+contact: Kontakt
+rights: Wszelkie prawa zastrzeżone
+flag-link: en.svg
+address: Siedziba firmy
+production-site: Zakład produkcyjny
+company-misc: Dane firmy
+working-hours: Godziny otwarcia
+mail-phone: Kontakt mailowy i telefoniczny
+eu: Wsparcie
+not-found: Strona nie istnieje!
+back-home: Wróć do strony głównej
+proven-quality: Potwierdzona jakość
+link-1090-2: 1090-2pl.pdf
+link-3834: 3834pl.pdf
+cert-1090-2: Certyfikat EN 1090-2 dla klasy EXC3 konstrukcji stalowych
+cert-3834: Certyfikat EN ISO 3834-2
+contact-us: Skontaktuj się z nami
+about-us: O nas
+previous: Poprzednia
+page: Strona
+next: Następna
+learn-more: Dowiedz się więcej
+see-more: Zobacz więcej
+example-projects: Przykładowe projekty
+projects-w: Wszystkie realizacje
+projects-p: Produkcja konstrukcji
+projects-k: Montaż konstrukcji
+projects-o: Obudowy hal
+main: Strona główna
+site-map: Mapa strony 
+our-offer: Nasza oferta

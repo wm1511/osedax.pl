@@ -1,6 +1,8 @@
-<h2>{{ i18n "proven-quality" }}</h2>
-<p>
-    {{ .Content }}
-</p>
-{{ $webp := resources.Get "webp/1090-2.webp" }}
-<img class="img-fluid shadow-sm my-3" src="{{ $webp.RelPermalink }}"></img>
+<div class="me-3">
+    <h2>{{ i18n "proven-quality" }}</h2>
+    <p>
+        {{ .Content }}
+    </p>
+    {{ $webp := resources.Get "webp/1090-2.webp" }}
+    <img class="img-fluid img-single shadow-sm my-3" src="{{ $webp.RelPermalink }}"></img>
+</div>

@@ -1,9 +1,45 @@
 <footer class="mt-auto">
 	<div class="container">
 		<div class="row">
-			<p class="pt-3 text-center">
-				{{ i18n "rights" }} &nbsp; &copy; 2024 <b>{{ index .Site.Data.contact.address.n2 }}</b>
-			</p>
+			<div class="col-md-4 py-3">
+				<h5>{{ i18n "site-map" }}</h5>
+				<ul class="site-map">
+					<li><a href="{{ .Site.BaseURL | relLangURL }}">{{ i18n "main" }}</a></li>
+					<li><a href="{{ relLangURL " offer" }}">{{ i18n "offer" }}</a></li>
+					<li><a href="{{ relLangURL " certificates" }}">{{ i18n "certificates" }}</a></li>
+					<li><a href="{{ relLangURL " projects" }}">{{ i18n "projects" }}</a></li>
+					<li><a href="{{ relLangURL " contact" }}">{{ i18n "contact" }}</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 py-3">
+				<h5>{{ i18n "contact" }}</h5>
+				<ul class="site-map">
+					<li><p>{{ .Site.Data.contact.production.a3 }}<br>{{ .Site.Data.contact.production.a4 }}</p></li>
+					{{ range .Site.Data.contact.list }}
+					<li>
+						<a href="mailto:{{ .i1 }}">
+							<img class="icon-sm me-2 align-middle" src="{{ .Site.BaseURL }}/mail.svg"></img>
+							{{ .i1 }}
+						</a>
+						<a href="callto:{{ .i2 }}">
+							<img class="icon-sm mx-2 align-middle" src="{{ .Site.BaseURL }}/phone.svg"></img>
+							{{ .i2 }}
+						</a>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+			<div class="col-md-4 py-3 text-center">
+				<p>
+					{{ i18n "rights" }} <br> &copy; {{ now.Format "2006" }} <b>{{ index .Site.Data.contact.address.n2 }}</b>
+				</p>
+				<a href="https://www.facebook.com/osedax.dm">
+					<img class="icon-md m-3" src="{{ .Site.BaseURL }}/fb.svg"></img>
+				</a>
+				<a href="https://github.com/wm1511/osedax.pl">
+					<img class="icon-md m-3" src="{{ .Site.BaseURL }}/gh.svg"></img>
+				</a>
+			</div>
 		</div>
 	</div>
 </footer>

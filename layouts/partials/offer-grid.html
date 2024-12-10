@@ -1,11 +1,12 @@
-{{ $offer := index .Site.Data.offer .Site.Language.Lang }}
+{{ $offer := index .context.Site.Data.offer .context.Site.Language.Lang }}
 
 <div class="row my-5">
     <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
-            {{ $p2 := resources.Get "webp/p2.webp" }}
-            {{ $p2 := $p2.Crop "3000x1500" }}
-            <img src="{{ $p2.RelPermalink }}" class="card-img-top">
+            {{ $p := resources.Get (printf "webp/p%d.webp" .variant) }}
+            {{ $p := $p.Crop "3000x1500" }}
+            {{ $p := $p.Resize "600x" }}
+            <img src="{{ $p.RelPermalink }}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">{{ $offer.p.title }}</h5>
                 <p class="card-text">{{ $offer.p.description }}</p>
@@ -15,9 +16,10 @@
     </div>
     <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
-            {{ $k2 := resources.Get "webp/k2.webp" }}
-            {{ $k2 := $k2.Crop "3000x1500" }}
-            <img src="{{ $k2.RelPermalink }}" class="card-img-top">
+            {{ $k := resources.Get (printf "webp/k%d.webp" .variant) }}
+            {{ $k := $k.Crop "3000x1500" }}
+            {{ $k := $k.Resize "600x" }}
+            <img src="{{ $k.RelPermalink }}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">{{ $offer.k.title }}</h5>
                 <p class="card-text">{{ $offer.k.description }}</p>
@@ -27,9 +29,10 @@
     </div>
     <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
-            {{ $o2 := resources.Get "webp/o2.webp" }}
-            {{ $o2 := $o2.Crop "3000x1500" }}
-            <img src="{{ $o2.RelPermalink }}" class="card-img-top">
+            {{ $o := resources.Get (printf "webp/o%d.webp" .variant) }}
+            {{ $o := $o.Crop "3000x1500" }}
+            {{ $o := $o.Resize "600x" }}
+            <img src="{{ $o.RelPermalink }}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">{{ $offer.o.title }}</h5>
                 <p class="card-text">{{ $offer.o.description }}</p>
