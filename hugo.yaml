@@ -1,5 +1,7 @@
 baseURL: https://osedax.pl
 defaultContentLanguage: pl
+params:
+  github_pages_url: "https://wm1511.github.io/osedax.pl/"
 
 languages:
   pl:
