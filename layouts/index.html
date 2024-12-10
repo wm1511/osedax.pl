@@ -5,22 +5,24 @@
             {{ partial "main-carousel.html" . }}
         </div>
     </div>
-    <div class="row my-5 py-5">
+    <div class="row my-5 py-5 align-items-center">
         <div class="col-md-6 pe-5">
             <h2>{{ i18n "about-us" }}</h2>
             <p>{{ (index .Site.Data.index .Site.Language.Lang).description }}</p>
         </div>
         <div class="col-md-6 mt-3">
-            <img class="img-fluid img-single shadow-sm" src="https://placehold.jp/1000x500.png"></img>
+            {{ $n1 := resources.Get "/webp/n1.webp" }}
+            <img class="img-fluid img-single shadow-sm" src="{{ $n1.RelPermalink }}"></img>
         </div>
     </div>
     <div class="row">
         <h2 class="text-center my-3">{{ i18n "our-offer" }}</h2>
         {{ partial "offer-grid.html" (dict "context" . "variant" 1 ) }}
     </div>
-    <div class="row my-5 py-5">
+    <div class="row my-5 py-5 align-items-center">
         <div class="col-md-6">
-            <img class="img-fluid img-single shadow-sm" src="https://placehold.jp/1000x500.png"></img>
+            {{ $n2 := resources.Get "/webp/n2.webp" }}
+            <img class="img-fluid img-single shadow-sm" src="{{ $n2.RelPermalink }}"></img>
         </div>
         <div class="col-md-6 ps-5 mt-3">
             {{ with (index .Site.Data.index .Site.Language.Lang).choose }}

@@ -10,32 +10,21 @@ pl:
       - Indywidualne podejście do klienta
   carousel:
     - caption: Innowacyjne konstrukcje stalowe dla nowoczesnych hal produkcyjnych
-      content: Szerokokątne ujęcie ukończonej hali produkcyjnej prezentujące konstrukcję stalową
-      image: t
+      image: m1
     - caption: Kompleksowe usługi w zakresie konstrukcji stalowych
-      content: Zespół pracujący na miejscu przy montażu stalowej ramy
-      image: t
+      image: m2
     - caption: Materiały z certyfikatem ISO i specjalistyczna wiedza
-      content: Zbliżenie stalowej belki z pracownikiem spawającym w tle
-      image: t
+      image: m3
     - caption: Nowoczesne techniki przyspieszające produkcję
-      content: Dźwig podnoszący stalowe belki na placu budowy podczas montażu
       image: m4
     - caption: Wydajna logistyka zapewniająca terminowość realizacji projektów
-      content: Obraz samochodu służbowego przewożącego konstrukcje
-      image: t
-    - caption: Innowacyjne rozwiązania dla każdego projektu
-      content: Rendering lub model 3D hali produkcyjnej o konstrukcji stalowej
-      image: t
-    - caption: Ekologiczne materiały i energooszczędne projekty
-      content: Nowoczesna, ekologiczna hala produkcyjna z panelami słonecznymi na dachu
-      image: t
+      image: m5
+    - caption: Dbałość o każdy szczegół
+      image: m6
     - caption: Bezpieczeństwo zawsze na pierwszym miejscu
-      content: Pracownicy w kaskach ochronnych i uprzężach na placu budowy konstrukcji stalowych
-      image: t
+      image: m7
     - caption: Twoja wizja, nasza wiedza
-      content: Architekt pokazujący projekt klientowi na placu budowy
-      image: t
+      image: m8
 
 en:
   description: OSEDAX is a company that has been in the steel construction business for more than 20 years. We manufacture individual steel elements, as well as construct large structures such as warehouse and production halls or sports facilities and ropeways. We also install roofs and facades of production halls. Steel structures made by us are assembled not only in Poland, but also in other parts of the world.
@@ -49,29 +38,18 @@ en:
       - Individual approach to the customer
   carousel:
     - caption: Innovative steel solutions for modern production halls
-      content: A wide-angle shot of a completed production hall showcasing steel construction
-      image: t
+      image: m1
     - caption: Comprehensive steel construction services
-      content: A team working on-site assembling a steel frame
-      image: t
+      image: m2
     - caption: ISO-certified materials and unmatched expertise
-      content: Close-up of a steel beam with a worker welding in the background
-      image: t
+      image: m3
     - caption: Modern techniques to speed up production
-      content: A crane lifting steel beams at a construction site during assembly
       image: m4
     - caption: Efficient logistics ensuring on-time project delivery
-      content: Image of a company car carrying structures
-      image: t
-    - caption: Innovative solutions for every project
-      content: A rendering or 3D model of a steel-framed production hall
-      image: t
-    - caption: Eco-friendly materials and energy-efficient designs
-      content: A modern, eco-friendly production hall with solar panels on the roof
-      image: t
+      image: m5
+    - caption: Attention to every detail
+      image: m6
     - caption: Safety first, always
-      content: Workers in safety helmets and harnesses at a steel construction site
-      image: t
+      image: m7
     - caption: Your vision, our expertise
-      content: An architect showing a blueprint to a client at a construction site
-      image: t
+      image: m8
