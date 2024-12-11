@@ -1,9 +1,9 @@
 pl:
-  description: OSEDAX to firma od ponad 20 lat działająca w branży konstrukcji stalowych. Produkujemy pojedyncze elementy stalowe, a także wznosimy duże obiekty, takie jak hale magazynowe i produkcyjne czy obiekty sportowe i koleje linowe. Zajmujemy się również montażem dachów oraz elewacji hal produkcyjnych. Wykonane przez nas konstrukcje stalowe montowane są nie tylko w Polsce, ale również w innych częściach świata.
+  description: OSEDAX to firma od 15 lat działająca w branży konstrukcji stalowych. Produkujemy pojedyncze elementy stalowe, a także wznosimy duże obiekty, takie jak hale magazynowe i produkcyjne czy obiekty sportowe i koleje linowe. Zajmujemy się również montażem dachów oraz elewacji hal produkcyjnych. Wykonane przez nas konstrukcje stalowe montowane są nie tylko w Polsce, ale również w innych częściach świata.
   choose:
     title: Dlaczego my?
     items: 
-      - Ponad 20 lat doświadczenia
+      - 15 lat doświadczenia
       - Profesjonalne wyposażenie zakładu
       - Wykwalifikowana kadra
       - Certyfikaty EN 1090-2 oraz EN ISO 3834-2
@@ -27,11 +27,11 @@ pl:
       image: m8
 
 en:
-  description: OSEDAX is a company that has been in the steel construction business for more than 20 years. We manufacture individual steel elements, as well as construct large structures such as warehouse and production halls or sports facilities and ropeways. We also install roofs and facades of production halls. Steel structures made by us are assembled not only in Poland, but also in other parts of the world.
+  description: OSEDAX is a company that has been in the steel construction business for 15 years. We manufacture individual steel elements, as well as construct large structures such as warehouse and production halls or sports facilities and ropeways. We also install roofs and facades of production halls. Steel structures made by us are assembled not only in Poland, but also in other parts of the world.
   choose:
     title: Why us?
     items: 
-      - Over 20 years of experience
+      - 15 years of experience
       - Professional workshop equipment
       - Qualified staff
       - EN 1090-2 and EN ISO 3834-2 certificates

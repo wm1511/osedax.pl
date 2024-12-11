@@ -1,4 +1,18 @@
 pl:
+  2023:
+    0:
+      title: Kolej Linowa Elka
+      description: Wykonanie i dostawa konstrukcji stalowej dla kolei linowej na terenie Parku Śląskiego w Chorzowie
+      categories:
+      - p
+      - k
+  2022:
+    0:
+      title: Hala produkcyjna MARPOL w Tychach
+      description: Dostosowanie istniejącej hali do produkcji - wykonanie i montaż konstrukcji stalowej 
+      categories:
+      - p
+      - k
   2021:
     0:
       title: Kolej linowa Solina
@@ -16,6 +30,13 @@ pl:
     1:
       title: Hangar w Goczałkowicach-Zdroju
       description: Wykonanie i montaż konstrukcji stalowej oraz obudowa dachu i ścian hangaru
+      categories:
+      - p
+      - k
+      - o
+    2:
+      title: Hala anodownia Grupa Kęty
+      description: Wykonanie i montaż konstrukcji stalowej oraz obudowa dachu i ścian
       categories:
       - p
       - k
@@ -67,6 +88,13 @@ pl:
       description: Wykonanie konstrukcji stalowej dla kolei linowej Słotwinka w Krynicy Zdroju
       categories:
       - p
+    4:
+      title: Hala dla prasy 35MN Grupa Kęty
+      description: Wykonanie konstrukcji hali oraz obudowy dachu i ścian
+      categories:
+      - p
+      - k
+      - o
   2017:
     0:
       title: Elektrociepłownia Gliwice
@@ -95,6 +123,20 @@ pl:
       - o
 
 en:
+  2023:
+    0:
+      title: Elka ropeway
+      description: execution and delivery of a steel structure for the ropeway at the Silesian Park in Chorzow.
+      categories:
+      - p
+      - k
+  2022:
+    0:
+      title: MARPOL production hall in Tychy
+      description: Adaptation of the existing hall for production - construction and installation of a steel structure
+      categories:
+      - p
+      - k
   2021:
     0:
       title: Solina ropeway
@@ -149,6 +191,13 @@ en:
       description: Construction of steel structure for Słotwinka ropeway in Krynica Zdrój
       categories:
       - p
+    4:
+      title: Hall for 35MN press Grupa Kęty
+      description: Fabrication and installation of steel structure and roof and wall casing
+      categories:
+      - p
+      - k
+      - o
   2017:
     0:
       title: Gliwice Combined Heat and Power Plant

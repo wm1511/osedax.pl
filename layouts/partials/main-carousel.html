@@ -3,11 +3,9 @@
 		<div class="carousel-inner shadow">
 			{{ range $index, $carousel := (index .Site.Data.index .Site.Language.Lang).carousel }}
 			{{ $image := resources.Get (printf "/webp/%s.webp" $carousel.image) }}
-			{{ if $image }}{{ $image.Crop "3000x1500" }}{{ end }}
 			<div class="carousel-item{{ if eq $index 0 }} active{{ end }}">
-				<img src="{{ if $image }}{{ $image.RelPermalink }}{{ else }}https://placehold.jp/3000x1500.png{{ end }}" class="img-fluid">
+				<img src="{{ $image.RelPermalink }}" class="img-fluid">
 				<div class="carousel-caption">
-					{{ if not $image }}<p style="color: #00ff00;">Obraz: {{ $carousel.content }}</p>{{ end }}
 					<h4>{{ $carousel.caption }}</h4>
 				</div>
 			</div>
