@@ -1,0 +1,18 @@
+pl:
+  title: Potwierdzona jakość
+  certificates:
+    0:
+      description: Certyfikat EN 1090-2 dla klasy EXC3 konstrukcji stalowych
+      link: 1090-2pl.pdf
+    1:
+      description: Certyfikat EN ISO 3834-2
+      link: 3834pl.pdf
+en:
+  title: Proven quality
+  certificates:
+    0:
+      description: EN 1090-2 for EXC3 steel structures certificate
+      link: 1090-2pl.pdf
+    1:
+      description: EN ISO 3834-2 certificate
+      link: 3834pl.pdf

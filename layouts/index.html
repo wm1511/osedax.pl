@@ -15,10 +15,8 @@
             <img class="img-fluid img-single shadow-sm" src="{{ $n1.RelPermalink }}"></img>
         </div>
     </div>
-    <div class="row">
-        <h2 class="text-center my-3">{{ i18n "our-offer" }}</h2>
-        {{ partial "offer-grid.html" (dict "context" . "variant" 1 ) }}
-    </div>
+    <h2 class="text-center my-3">{{ i18n "our-offer" }}</h2>
+    {{ partial "offer-grid.html" (dict "context" . "variant" 1 ) }}
     <div class="row my-5 py-5 align-items-center">
         <div class="col-md-6">
             {{ $n2 := resources.Get "/webp/n2.webp" }}
@@ -37,11 +35,7 @@
             {{ end }}
         </div>
     </div>
-    <div class="row">
-        {{ partial "offer-projects.html" . }}
-    </div>
-    <div class="row">
-        {{ partial "offer-contact.html" . }}
-    </div>
+    {{ partial "offer-projects.html" . }}
+    {{ partial "offer-contact.html" . }}
 </div>
 {{ end }}

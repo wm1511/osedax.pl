@@ -2,7 +2,7 @@
 
 <div class="row my-5">
     <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
+        <div data-sal="slide-down" data-sal-duration="500" class="card h-100 shadow-sm">
             {{ $p := resources.Get (printf "webp/p%d.webp" .variant) }}
             {{ $p := $p.Crop "3000x1500" }}
             {{ $p := $p.Resize "600x" }}
@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
+        <div data-sal="slide-down" data-sal-duration="500" data-sal-delay="250" class="card h-100 shadow-sm">
             {{ $k := resources.Get (printf "webp/k%d.webp" .variant) }}
             {{ $k := $k.Crop "3000x1500" }}
             {{ $k := $k.Resize "600x" }}
@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
+        <div data-sal="slide-down" data-sal-duration="500" data-sal-delay="500" class="card h-100 shadow-sm">
             {{ $o := resources.Get (printf "webp/o%d.webp" .variant) }}
             {{ $o := $o.Crop "3000x1500" }}
             {{ $o := $o.Resize "600x" }}

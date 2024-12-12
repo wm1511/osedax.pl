@@ -1,4 +1,26 @@
 pl:
+  2024:
+    0:
+      title: Hala magazynowa AN-KOM 2 w Inwałdzie
+      description: Wykonanie i montaż konstrukcji hali oraz obudowy dachu i ścian
+      categories:
+      - p
+      - k
+      - o
+    1:
+      title: Hala sportowa w Parku Włókniarzy w Bielsku-Białej
+      description: Wykonanie i montaż konstrukcji hali oraz obudowy dachu i ścian
+      categories:
+        - p
+        - k
+        - o  
+    2:
+      title: Serwis samochodów Petit Forestier w Balicach
+      description: Wykonanie i montaż konstrukcji stalowej oraz obudowy dachu i ścian
+      categories:
+        - p
+        - k
+        - o 
   2023:
     0:
       title: Kolej Linowa Elka
@@ -6,8 +28,22 @@ pl:
       categories:
       - p
       - k
+    1:
+      title: Hala magazynowa AN-KOM w Inwałdzie
+      description: Wykonanie i montaż konstrukcji hali oraz obudowy dachu i ścian
+      categories:
+      - p
+      - k
+      - o
   2022:
     0:
+      title: Hala produkcyjna Grupa Kęty
+      description: Wykonanie i montaż konstrukcji hali oraz obudowy dachu i ścian
+      categories:
+      - p
+      - k
+      - o
+    1:
       title: Hala produkcyjna MARPOL w Tychach
       description: Dostosowanie istniejącej hali do produkcji - wykonanie i montaż konstrukcji stalowej 
       categories:
@@ -22,7 +58,7 @@ pl:
   2020:
     0:
       title: Hala produkcyjna Fonte
-      description: Montaż płyt warstwowych oraz konstrukcji stalowej attyki
+      description: Wykonanie i montaż konstrukcji stalowej oraz płyt warstwowych 
       categories:
       - p
       - k
@@ -35,7 +71,7 @@ pl:
       - k
       - o
     2:
-      title: Hala anodownia Grupa Kęty
+      title: Hala produkcyjna Grupa Kęty
       description: Wykonanie i montaż konstrukcji stalowej oraz obudowa dachu i ścian
       categories:
       - p
@@ -89,7 +125,7 @@ pl:
       categories:
       - p
     4:
-      title: Hala dla prasy 35MN Grupa Kęty
+      title: Hala produkcyjna Grupa Kęty
       description: Wykonanie konstrukcji hali oraz obudowy dachu i ścian
       categories:
       - p
@@ -121,17 +157,59 @@ pl:
       - p
       - k
       - o
+  2013:
+    0:
+      title: Kolej Linowa Polinka
+      description: Montaż obudowy stacji kolei linowej Polinka we Wrocławiu
+      categories:
+      - o
 
 en:
-  2023:
+  2024:
     0:
-      title: Elka ropeway
-      description: execution and delivery of a steel structure for the ropeway at the Silesian Park in Chorzow.
+      title: Warehouse hall AN-KOM 2 in Inwald
+      description: Construction and installation of the hall structure and roof and wall casing
       categories:
       - p
       - k
+      - o
+    1:
+      title: Sports hall in Park Włókniarzy in Bielsko-Biała
+      description: Construction and installation of the hall structure and roof and wall casing
+      categories:
+        - p
+        - k
+        - o  
+    2:
+      title: Petit Forestier car service in Balice
+      description: Fabrication and installation of steel structure and roof and wall casing
+      categories:
+        - p
+        - k
+        - o
+  2023:
+    0:
+      title: Elka ropeway
+      description: execution and delivery of a steel structure for the ropeway at the Silesian Park in Chorzow
+      categories:
+      - p
+      - k
+    1:
+      title: AN-KOM warehouse hall in Inwald
+      description: Fabrication and installation of hall structure and roof and wall casing
+      categories:
+      - p
+      - k
+      - o
   2022:
     0:
+      title: Production hall Grupa Kęty
+      description: Fabrication and installation of hall structure and roof and wall casing
+      categories:
+      - p
+      - k
+      - o
+    1:
       title: MARPOL production hall in Tychy
       description: Adaptation of the existing hall for production - construction and installation of a steel structure
       categories:
@@ -151,6 +229,20 @@ en:
       - p
       - k
       - o
+    1:
+      title: Hangar in Goczałkowice-Zdrój
+      description: Fabrication and installation of steel structure and housing the roof and walls of the hangar
+      categories:
+      - p
+      - k
+      - o
+    2:
+      title: Production hall Grupa Kęty
+      description: Construction and installation of steel structure and roof and wall casing
+      categories:
+      - p
+      - k
+      - o
   2019:
     0:
       title: Greenhouse No. 5 in Botanical Garden of the Jagiellonian University
@@ -159,6 +251,13 @@ en:
       - p
       - k
     1:
+      title: Investment warehouse hall in Katowice
+      description: Construction and installation of steel structure and roof and wall casing
+      categories:
+      - p
+      - k
+      - o
+    2:
       title: KIZO production plant in Mikolow
       description: Fabrication and installation of production hall steel structure
       categories:
@@ -192,7 +291,7 @@ en:
       categories:
       - p
     4:
-      title: Hall for 35MN press Grupa Kęty
+      title: Production hall Grupa Kęty
       description: Fabrication and installation of steel structure and roof and wall casing
       categories:
       - p
@@ -223,4 +322,10 @@ en:
       categories:
       - p
       - k
+      - o
+  2013:
+    0:
+      title: Polinka ropeway
+      description: Installation of the Polinka cable car station housing in Wrocław.
+      categories:
       - o

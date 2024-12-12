@@ -13,8 +13,8 @@
 		<h2>{{ $year }}</h2>
 		<div class="row">
 			{{ range $index, $details := $projects }}
-			<div class="col-md-4 mb-3" data-category="{{ delimit .categories " " }}">
-				<div class="card card-expandable shadow-sm" data-bs-toggle="modal"
+			<div data-sal="slide-down" data-sal-duration="500" data-sal-delay="{{ mul (mod (int $index) 3) 250 }}" class="col-md-4 mb-3" data-category="{{ delimit .categories " " }}">
+					<div class="card card-expandable shadow-sm" data-bs-toggle="modal"
 					data-bs-target="#modal-{{ $year }}-{{ $index }}">
 					{{ $thumbnail := resources.Get (printf "/webp/%s/%s.1.webp" $year $index) }}
 					{{ $thumbnail := $thumbnail.Resize "600x" }}

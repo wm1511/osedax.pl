@@ -4,7 +4,7 @@
 	<div class="offer-projects container my-5">
 		<h2 class="text-center my-4">{{ i18n "example-projects" }}</h2>
 		<div class="row">
-			<div class="col-md-4 my-3">
+			<div data-sal="slide-down" data-sal-duration="500" class="col-md-4 my-3">
 				<div class="card shadow-sm">
 					{{ $p1 := resources.Get "webp/2019/0.1.webp" }}
 					{{ $p1 := $p1.Resize "600x" }}
@@ -16,7 +16,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 my-3">
+			<div data-sal="slide-down" data-sal-duration="500" data-sal-delay="250" class="col-md-4 my-3">
 				<div class="card shadow-sm">
 					{{ $p3 := resources.Get "webp/2021/0.1.webp" }}
 					{{ $p3 := $p3.Resize "600x" }}
@@ -28,7 +28,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 my-3">
+			<div data-sal="slide-down" data-sal-duration="500" data-sal-delay="500" class="col-md-4 my-3">
 				<div class="card shadow-sm">
 					{{ $p2 := resources.Get "webp/2020/0.1.webp" }}
 					{{ $p2 := $p2.Resize "600x" }}

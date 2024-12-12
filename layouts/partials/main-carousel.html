@@ -5,7 +5,7 @@
 			{{ $image := resources.Get (printf "/webp/%s.webp" $carousel.image) }}
 			<div class="carousel-item{{ if eq $index 0 }} active{{ end }}">
 				<img src="{{ $image.RelPermalink }}" class="img-fluid">
-				<div class="carousel-caption">
+				<div data-sal="zoom-in" data-sal-duration="250" data-sal-repeat class="carousel-caption">
 					<h4>{{ $carousel.caption }}</h4>
 				</div>
 			</div>
@@ -18,3 +18,4 @@
 			</button>
 		</div>
 	</div>
+</div>

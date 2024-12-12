@@ -9,8 +9,8 @@ production:
   a4: 34-122, Gierałtowice
 
 misc:
-  m1: "9371038131"
-  m2: "072325660"
+  m1: 9371038131
+  m2: 072325660
 
 hours:
   open: 7:00
