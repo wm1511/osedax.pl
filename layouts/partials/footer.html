@@ -15,18 +15,25 @@
 				<h5>{{ i18n "contact" }}</h5>
 				<ul class="site-map">
 					<li><p>{{ .Site.Data.contact.production.a3 }}<br>{{ .Site.Data.contact.production.a4 }}</p></li>
-					{{ range .Site.Data.contact.list }}
 					<li>
-						<a href="mailto:{{ .i1 }}">
+						<a href="mailto:{{ .Site.Data.contact.list.m1 }}">
 							<img class="icon-sm me-2 align-middle" src="{{ .Site.BaseURL }}/mail.svg"></img>
-							{{ .i1 }}
+							{{ .Site.Data.contact.list.m1 }}
 						</a>
-						<a href="callto:{{ .i2 }}">
+						<a href="callto:{{ .Site.Data.contact.list.p1 }}">
 							<img class="icon-sm mx-2 align-middle" src="{{ .Site.BaseURL }}/phone.svg"></img>
-							{{ .i2 }}
+							{{ .Site.Data.contact.list.p1 }}
+						</a>
+						<br>
+						<a href="mailto:{{ .Site.Data.contact.list.m2 }}">
+							<img class="icon-sm me-2 align-middle" src="{{ .Site.BaseURL }}/mail.svg"></img>
+							{{ .Site.Data.contact.list.m2 }}
+						</a>
+						<a href="callto:{{ .Site.Data.contact.list.p2 }}">
+							<img class="icon-sm mx-2 align-middle" src="{{ .Site.BaseURL }}/phone.svg"></img>
+							{{ .Site.Data.contact.list.p2 }}
 						</a>
 					</li>
-					{{ end }}
 				</ul>
 			</div>
 			<div class="col-md-4 py-3 text-center">

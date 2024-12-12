@@ -17,7 +17,7 @@ hours:
   close: 16:00
   
 list:
-  - i1: biuro.osedax@vp.pl
-    i2: 507429459
-  - i1: osedax@vp.pl
-    i2: 607227073
+  m1: biuro.osedax@vp.pl
+  p1: 507429459
+  m2: osedax@vp.pl
+  p2: 607227073

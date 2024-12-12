@@ -1,7 +1,7 @@
 <div class="row justify-content-center mb-3">
     <div class="btn-group-vertical py-3" role="group" aria-label="Vertical radio toggle button group">
         {{ range $index, $certificates := (index .Site.Data.certificates .Site.Language.Lang).certificates }}
-        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio{{ $index }}" autocomplete="off" pdf="{{ .Site.BaseURL }}/{{ .link }}" checked>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio{{ $index }}" autocomplete="off" pdf="{{ $.Site.BaseURL }}{{ .link }}" checked>
         <label class="btn btn-secondary" for="vbtn-radio{{ $index }}">{{ .description }}</label>
         {{ end }}
     </div>
